@@ -1,0 +1,303 @@
+/**
+ * @name OldProfile
+ * @author That Panda
+ * @version 1
+ * @description Old 2023 Discord Profile.
+*/
+
+
+.theme-dark {
+  --header-secondary: #fff !important;
+}
+
+.theme-light {
+ --header-secondary: #000 !important;
+}
+
+
+
+/* Body 1 */
+
+.f5f93a5c4078d63c-viewFullBio {
+	display: none;
+}
+.f5f93a5c4078d63c-descriptionClamp {
+	-webkit-line-clamp: 190 !important;
+	position: relative;
+	max-height: 2000px;
+	overflow-x: hidden;
+	overflow-y: auto;	
+}
+
+/* No extra spacing if have role */
+
+:root:not(:has([aria-label="Roles"])) .f5f93a5c4078d63c-descriptionClamp {
+  margin-bottom: 40px;
+}
+
+
+.f5f93a5c4078d63c-descriptionClamp::-webkit-scrollbar-thumb {
+	background: transparent;
+	border-radius: 99px;
+}
+.f5f93a5c4078d63c-descriptionClamp::-webkit-scrollbar {
+	width: 4px;
+}
+.f5f93a5c4078d63c-descriptionClamp:hover::-webkit-scrollbar-track {
+	background: 0 0;
+	border-radius: 10px;
+}
+.f5f93a5c4078d63c-descriptionClamp:hover::-webkit-scrollbar-thumb {
+	background: var(--bg-overlay-6, var(--background-tertiary));
+	border-radius: 0px;
+}
+.f5f93a5c4078d63c-descriptionClamp:before {
+	content: "ABOUT ME";
+	font-size: 13px;
+	color: var(--header-secondary);
+	font-weight: 800;
+	font-family: var(--font-display);
+    
+}
+.custom-profile-theme.theme-dark .body__5be3e {
+    z-index: 1;
+    padding: 8px 6px 8px;
+    margin: auto;
+    flex-direction: column;
+    gap: 12px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 265px;
+    overflow: visible !important;
+}
+
+.custom-profile-theme.theme-light .body__5be3e {
+    z-index: 1;
+    padding: 8px 6px 8px;
+    margin: auto;
+    flex-direction: column;
+    gap: 12px;
+    background: rgba(255,255,255, 0.5);
+    border-radius: 10px;
+    width: 265px;
+    overflow: visible !important;
+}
+
+
+._5be3ef42f92174b2-body {
+    z-index: 1;
+    padding: 8px 6px 8px;
+    margin: auto;
+    flex-direction: column;
+    gap: 12px;
+    background: rgba(200,200,200,0.1);
+    border-radius: 10px;
+    width: 265px;
+    overflow: visible !important;
+}
+
+
+
+/* Roles */
+/* oh that was an easy fix */
+
+[aria-label="Roles"]:before {
+	content: "ROLES";
+	font-size: 13px;
+	color: var(--header-secondary);
+	font-weight: 800;
+	font-family: var(--font-display);
+	margin-right: 200px;
+	margin-bottom: 4px;
+}
+
+[aria-label="Roles"] {
+	margin-bottom: 50px !important;
+}
+
+
+/* before you yell at me I CANNOT figure out how to retain the hover for badges while not intersecting with status */
+/* Badges */
+
+
+.custom-profile-theme.theme-dark [aria-label="User Badges"] {
+	display: flex; /* replace with display: none; for no badges */
+	padding: 4px;
+	border-radius: 10px;
+	background: rgba(0,0,0,0.3) !important;
+}
+
+.custom-profile-theme.theme-light [aria-label="User Badges"] {
+	display: flex; /* replace with display: none; for no badges */
+	padding: 4px;
+	border-radius: 10px;
+	background: rgba(255,255,255,0.5) !important;
+}
+
+[aria-label="User Badges"] {
+	display: flex; /* replace with display: none; for no badges */
+	padding: 4px;
+	border-radius: 10px;
+	background: rgba(200,200,200,0.1) !important;
+}
+
+[aria-label="User Badges"] {
+	position: absolute;
+	display: flex !important;
+	margin-top: -130px;
+	/* triage for placement of badges */
+	left: 190px; 
+}
+
+._63ed30c16c7151f2-container {
+    border-bottom: 1px solid rgba(128,128,128,0.33); 
+    padding-bottom: 70px; /* 50px if with status */
+}
+
+
+
+/* status */
+
+.ab86098b36386ff7-container {
+	top: 200px !important;
+	left: 15px !important;
+}
+
+.ab86098b36386ff7-content {
+	min-width: 240px;
+}
+.ab86098b36386ff7-referenceContainer {
+	display: none !important;
+}
+.ab86098b36386ff7-outer,
+.ab86098b36386ff7-inner {
+	border: none ;
+	background: none;
+	text-align: left;
+	box-shadow: none;
+	border-radius: 0px !important;
+	min-width: 260px !important;
+	min-height: 50px !important;
+}
+.ab86098b36386ff7-outer:before,
+.ab86098b36386ff7-outer:after {
+	display: none;
+}
+.ab86098b36386ff7-outer {
+	background: transparent;
+}
+
+.ab86098b36386ff7-outer, .ab86098b36386ff7-outer:before,.ab86098b36386ff7-outer:after {
+	box-shadow: none;
+	z-index: 1;
+	background: transparent;
+	top: 117px !important;
+}
+
+.custom-profile-theme.theme-dark .ab86098b36386ff7-outer {
+	border: none;
+}
+
+.custom-profile-theme.theme-light .ab86098b36386ff7-outer {
+	border: none;
+}
+
+.ab86098b36386ff7-content {
+  overflow: visible !important;
+  -webkit-line-clamp: 40 !important;
+}
+
+
+
+
+/* experimenting with notes */
+/* from milbits/OldCord thanks */
+
+
+._63ed30c16c7151f2-nicknameIcons {
+	top: calc(100% - 50px);
+	position: absolute;
+	display: flex !important;
+	padding-top: 15px !important;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	width: 100%;
+	margin-top: auto;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	& span:nth-of-type(1) {
+		width: 0;
+
+	}
+	& ._0f0745937100f096-button {
+		opacity: 1;
+		width: 10px;
+	}
+	& .b18fe29d6fe8dd82-hiddenVisually:before {
+		content: "NOTE";
+		position: absolute;
+		margin-top: -17px;
+		color: var(--header-secondary);
+		font-weight: 800;
+		font-family: var(--font-display);
+		font-size: 13px;
+	}
+	& ._0f0745937100f096-button svg {
+		display: none;
+	}
+	& .b18fe29d6fe8dd82-hiddenVisually {
+		display: inline-block;
+		align-content: start;
+		text-align: left;
+		min-height: 38px;
+		margin-top: 10px;
+		white-space: pre-wrap;
+		color: var(--header-secondary);
+		font-weight: 500;
+		font-family: var(--font-display);
+		font-size: 13px;
+		user-select: text;
+		clip: unset;
+		clip-path: unset;
+		height: unset;
+		overflow: auto;
+		position: unset;
+		width: unset;
+		&::-webkit-scrollbar-thumb {
+			background: transparent;
+			border-radius: 99px;
+		}
+		&::-webkit-scrollbar {
+			width: 4px;
+		}
+		&:hover::-webkit-scrollbar-track {
+			background: 0 0;
+			border-radius: 10px;
+		}
+		&:hover::-webkit-scrollbar-thumb {
+			background: var(--background-gradient-highest, var(--background-tertiary));
+			border-radius: 999px;
+		}
+	}
+}
+
+._5be3ef42f92174b2-footer:is(:empty) {
+	display: none;
+}
+
+
+/* friend button */
+
+.da589062f0c96515-wrapper {
+	background: transparent !important;
+	opacity: 0.1;
+}
+
+
+/* goo (no Game collection) */
+
+[aria-label="Game Collection"] {
+  display: none !important;
+}
+

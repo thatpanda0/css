@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial.0">
+    <title>Windows 10 Lock Screen</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="content-wrapper"></div>
+        <button id="bg-upload-btn" class="bg-button">&#xE713;</button>
+        <button id="light-mode-btn" class="other-button">&#xE706;</button>
+        <input type="file" id="bg-input" accept="image/*" style="display: none;">
+        
+        <div class="time" id="time">9:25</div>
+        <div class="date" id="date">Tuesday, January 18</div>
+        <div class="availability-box">
+            <p>Available<br><span class="available-text">Available for the rest of the day</span></p>
+        </div>
+        <div class="button-container">
+            <button class="small-box" onclick="window.location.href='https://teams.microsoft.com/';"><span class="icon">&#xE714;</span><span class="button-text">Call</span></button>
+            <button class="small-box" onclick="window.location.href='https://evergreen.flexisched.net/';"><span class="icon">&#xE929;</span><span class="button-text">Whiteboard</span></button>
+            <button class="small-box" onclick="window.location.href='https://launchpad.classlink.com/lwsd/';"><span class="icon">&#xEC16;</span><span class="button-text">Connect</span></button>
+        </div>
+        <div class="account-box">
+            <span class="account-icon">&#xE716;</span>
+            <p><span class="account-text">Sign in to see your meetings and files</span></p>
+        </div>
+        <div class="username" contenteditable="True">Studio A Surface Hub 2S</div>
+
+        <div class="windows-container">
+            <button class="windows-button" onclick="toggleFlyout()"></button>
+        </div>
+        
+        <div class="overlay" id="overlay" onclick="toggleFlyout()">
+            <div class="flyout" onclick="event.stopPropagation();">
+                Flyout Content
+            </div>
+        </div>
+        <script>
+            function updateTime() {
+                const now = new Date();
+                document.getElementById('time').textContent = now.getHours() + ':' + (now.getMinutes()<10?'0':'') + now.getMinutes();
+                document.getElementById('date').textContent = now.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+            }
+            setInterval(updateTime, 1000);
+            updateTime();
+            
+            document.getElementById('bg-upload-btn').addEventListener('click', function() {
+                document.getElementById('bg-input').click();
+            });
+            
+            document.getElementById('light-mode-btn').addEventListener('click', function () {
+            document.body.classList.toggle('light-mode');
+            });
+
+            document.getElementById('bg-input').addEventListener('change', function(event) {
+                const file = event.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        document.body.style.backgroundImage = `url(${e.target.result})`;
+                        document.body.style.backgroundSize = 'cover';
+                    };
+                    reader.readAsDataURL(file);
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>

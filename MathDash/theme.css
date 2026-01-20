@@ -1,0 +1,226 @@
+/* ==Userstyle==
+
+@name	MathDash
+@namespace	mathdash.com
+@version	v0.5-B
+@description	see above
+@author		Chat
+==/Userstyle== */
+@-moz-document domain("mathdash.com") {
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+    .bg-background {
+        background-color: rgb(245, 245, 245) !important;
+    }
+    .text-text,
+    .text-gray-100 {
+        color: #000 !important;
+        font-family: "Inter", sans-serif !important;
+    }
+
+    .dark {
+        --faintbox: #efefef !important;
+    }
+
+    p,
+    span,
+    strong {
+        user-select: auto;
+    }
+
+    .bg-blue-950,
+    .hover\:bg-blue-600:hover {
+        background-color: #f3f3ff !important; /* so my peanut brain finally realised its actually hard to see. original is FAFAFF */
+    }
+
+    .font-sans {
+        font-family: "Inter", sans-serif !important;
+    }
+
+    .rounded-lg {
+        user-select: auto !important;
+    }
+
+    .hover\:bg-primary-800:hover,
+    .hover\:bg-primary-900:hover,
+    .hover\:bg-gray-700:hover,
+    .bg-primary-900 {
+        background-color: #efe !important;
+    }
+
+    .resize-handle {
+        width: 4px !important;
+        background-color: #000 !important;
+    }
+
+    .bg-gray-500,
+    .bg-gray-900 {
+        background-color: #eee !important;
+    }
+
+    .bg-primary-500 {
+        background-color: #ccc;
+    }
+
+    .shadow-primary-500 {
+        --tw-shadow: none !important;
+    }
+
+    .border-primary-500 {
+        border-color: rgba(0, 0, 0, 0) !important;
+    }
+
+    .bg-faintbox {
+        background-color: rgba(255, 255, 255, 0.9) !important;
+        border-radius: 15px !Important;
+    }
+
+    .fill-primary-600 {
+        color: #ddd !important;
+    }
+
+    .border-black,
+    .border-gray-600,
+    .border-gray-700\/50,
+    .border-gray-700 {
+        border: none !important;
+    }
+/*
+    .h-8 {
+        display: none !important;
+    }
+Enabling this nukes both problem solved in profile AND notification/chat buttons in top-right
+*/
+    .p-1 {
+        border-radius: 7px !Important;
+    }
+
+
+    a[href^="/contest/"] {
+        background-color: #efefef !important;
+    }
+
+    .rounded-3xl {
+        background-color: #fefefe !important;
+    }
+
+    .bg-gray-800 {
+        background-color: #f9f9f9 !Important;
+    }
+
+    .hover\:bg-background {
+        background-color: #fefefe !important;
+    }
+
+    .mx-2 {
+        overflow: hidden !important;
+    }
+
+    /* Chromium and Firefox */
+    .overflow-y-auto::-webkit-scrollbar,
+    div::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    .overflow-y-auto {
+        scrollbar-width: none;
+    }
+
+    .hover\:bg-gray-800:hover {
+        background-color: rgba(255, 255, 255, 0) !important;
+    }
+
+    .h-3\/5 {
+        background-image: url('https://raw.githubusercontent.com/thatpanda0/b/refs/heads/master/assets/backgroundb.jpg') !important;
+    }
+
+    .css-1g2lvy1,
+    .css-d0zi81 {
+        font-family: "Inter", sans-serif;
+        color: #000 !Important;
+    }
+
+    .bg-gray-900\/70,
+    .bg-gray-800\/60,
+    .bg-gray-900\/50 {
+        background-color: rgba(230, 230, 230, 0.9) !important;
+    }
+
+    .bg-gray-800\/50 {
+        background-color: rgba(200, 200, 200, 0.9) !important;
+    }
+
+    .text-gray-400,
+    .text-white {
+        color: #000 !important;
+    }
+
+    .font-medium {
+        color: #000 !important;
+    }
+
+    .to-black,
+    .to-gray-800 {
+        --tw-gradient-to: #fff !Important;
+    }
+
+    .from-gray-950,
+    .from-gray-900 {
+        --tw-gradient-from: #f3f3f3 !important;
+    }
+
+    .bg-gray-700 {
+        background-color: #888 !important;
+    }
+
+    .css-9n3ag9,
+    .css-6d7p5q {
+        font-family: "Inter", sans-serif;
+        color: #000 !Important;
+        border-color: #000 !important;
+    }
+    .bg-red-950 {
+        background-color: #fff3f3 !important; /* same here */
+    }
+    img {
+        filter: none !important;
+    }
+    .text-indigo-300,
+    .text-indigo-200,
+    .text-indigo-400,
+    .text-blue-300,
+    .text-blue-300\/70,
+    .text-blue-200,
+    .text-blue-400 {
+        color: #1f3269 !important;
+    }
+    .text-green-200,
+    .text-green-300\/70 {
+        color: #1f6929 !important;
+    }
+    .text-orange-200,
+    .text-orange-300\/70 {
+        color: #69491f !important;
+    }
+    .hover\:bg-gray-800\/60:hover, .bg-gray-800\/40 {
+        background-color: #eee !important;
+    }
+    
+    .whitespace-pre-wrap {
+        color: #000 !important;
+        user-select: auto !important;
+    }
+    
+    .text-gray-300, .text-gray-200 {
+        color: #333 !important;
+    }
+    
+    .bg-\[rgba\(15\,15\,15\,1\)\] {
+        background-color: #eee !important;
+    }
+    
+    .bg-background\/30 {
+        background-color: #ededed !important;
+    }
+}

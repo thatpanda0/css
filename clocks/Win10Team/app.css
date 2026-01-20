@@ -1,0 +1,252 @@
+@font-face {
+    font-family: "Segoe UI";
+    src: local("Segoe UI Light"), url("https://discordstyles.github.io/Fluent/fonts/light.woff2") format("woff2");
+    font-weight: 100;
+}
+@font-face {
+  font-family: "Segoe UI Semilight";
+  src: local("Segoe UI Semilight"), url("https://github.com/steeve/skin.personamod/raw/refs/heads/master/fonts/Segoe%20UI%20Semi%20Light.ttf") format("ttf");
+  font-weight: 200;
+}
+@font-face {
+    font-family: "Segoe UI";
+    src: local("Segoe UI"), url("https://discordstyles.github.io/Fluent/fonts/normal.woff2") format("woff2");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Segoe UI";
+    src: local("Segoe UI Semibold"), url("https://discordstyles.github.io/Fluent/fonts/semibold.woff2") format("woff2");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Segoe UI";
+    src: local("Segoe UI Bold"), url("https://discordstyles.github.io/Fluent/fonts/bold.woff2") format("woff2");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Segoe Fluent Icons";
+    src: local("Segoe Fluent Icons"), url("https://takosthings.github.io/Fluent-Discord-Fonts/Segoe-Fluent-Icons.ttf") format("truetype");
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('Img301.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Segoe UI", sans-serif;
+    flex-direction: column;
+}
+.time {
+    font-size: 120px;
+}
+.date {
+    font-size: 24px;
+}
+.availability-box {
+    background: rgba(0, 120, 215, 0.5);
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    margin-top: 20px;
+    width: 438px;
+    height: 136px;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 30px;
+}
+.button-container {
+    margin-right: 0px;
+}
+.small-box {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+  margin-top: 6px;
+  width: 156px;
+  height: 156px;
+  margin-left: 1px;
+  font-family: "Segoe UI Semibold", sans-serif;
+  font-size: 15px;
+  border: none !important;
+}
+.small-text {
+  font-size: 24px;
+  font-family: "Segoe UI Semilight", sans-serif;
+  color: #cccccc;
+}
+
+.available-text {
+  font-size: 24px;
+  font-family: "Segoe UI Semilight", sans-serif;
+  color: #cccccc;
+}
+
+.button-text {
+  position: relative;
+  top: 42px;
+  left: -56px;
+}
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+  z-index: -1;
+}
+.icon {
+  font-family: "Segoe MDL2 Assets";
+  font-size: 50px;
+  position: relative;
+  left: 30px;
+  color: #fff;
+}
+.account-icon {
+  font-family: "Segoe MDL2 Assets";
+  font-size: 40px;
+  position: relative;
+  left: 30px;
+  top: 20px;
+  color: #fff;
+}
+.account-box {
+  background: rgba(0, 0, 0, 0.5);
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+  margin-top: 5px;
+  width: 438px;
+  height: 76px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 30px; 
+}
+.account-text {
+  font-size: 20px;
+  font-family: "Segoe UI Semilight", sans-serif;
+  color: #fff;
+  position: relative;
+  top: -66px;
+  left: 90px;
+}
+
+.bg-button {
+  font-family: "Segoe MDL2 Assets";
+  font-size: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  background: transparent !important;
+  border: none !important;
+}
+
+.other-button {
+  font-family: "Segoe MDL2 Assets";
+  font-size: 20px;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  background: transparent !important;
+  border: none !important;
+}
+
+.content-wrapper {
+  position: absolute;
+  top: -100px;
+}
+
+.username {
+  position: absolute;
+  max-width: 500px;
+  min-width: 500px;
+  font-size: 24px;
+  left: 20px;
+  bottom: 20px;
+}
+
+.windows-container {
+  position: absolute;
+  bottom: 20px;
+}
+.windows-button {
+  width: 24px;
+  height: 24px;
+  background: url('Windows.png') no-repeat center/cover;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.flyout {
+  position: fixed;
+  z-index: 320;
+  width: 812px;
+  height: 872px;
+  font-size: 42px;
+  background: rgba(0,0,0,0.75);
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.light-mode .small-box,
+.light-mode .account-box,
+.light-mode .flyout {
+    background: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+.light-mode .availability-box {
+    background: rgba(0, 120, 215, 0.5);
+}
+
+.light-mode .time,
+.light-mode .date,
+.light-mode .icon,
+.light-mode .account-icon,
+.light-mode .account-text,
+.light-mode .small-text,
+.light-mode .button-text {
+    color: black;
+}
+
+.light-mode body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0) !important;
+  pointer-events: none;
+  z-index: -1;
+}
