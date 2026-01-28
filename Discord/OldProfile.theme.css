@@ -18,10 +18,10 @@
 
 /* Body 1 */
 
-.f5f93a5c4078d63c-viewFullBio {
+.viewFullBio_f5f93a {
 	display: none;
 }
-.f5f93a5c4078d63c-descriptionClamp {
+.descriptionClamp_f5f93a {
 	-webkit-line-clamp: 190 !important;
 	position: relative;
 	max-height: 2000px;
@@ -31,27 +31,27 @@
 
 /* No extra spacing if have role */
 
-:root:not(:has([aria-label="Roles"])) .f5f93a5c4078d63c-descriptionClamp {
+:root:not(:has([aria-label*="Role"])) .descriptionClamp_f5f93a {
   margin-bottom: 40px;
 }
 
 
-.f5f93a5c4078d63c-descriptionClamp::-webkit-scrollbar-thumb {
+.descriptionClamp_f5f93a::-webkit-scrollbar-thumb {
 	background: transparent;
 	border-radius: 99px;
 }
-.f5f93a5c4078d63c-descriptionClamp::-webkit-scrollbar {
+.descriptionClamp_f5f93a::-webkit-scrollbar {
 	width: 4px;
 }
-.f5f93a5c4078d63c-descriptionClamp:hover::-webkit-scrollbar-track {
+.descriptionClamp_f5f93a:hover::-webkit-scrollbar-track {
 	background: 0 0;
 	border-radius: 10px;
 }
-.f5f93a5c4078d63c-descriptionClamp:hover::-webkit-scrollbar-thumb {
+.descriptionClamp_f5f93a:hover::-webkit-scrollbar-thumb {
 	background: var(--bg-overlay-6, var(--background-tertiary));
 	border-radius: 0px;
 }
-.f5f93a5c4078d63c-descriptionClamp:before {
+.descriptionClamp_f5f93a:before {
 	content: "ABOUT ME";
 	font-size: 13px;
 	color: var(--header-secondary);
@@ -84,7 +84,7 @@
 }
 
 
-._5be3ef42f92174b2-body {
+.body__5be3e {
     z-index: 1;
     padding: 8px 6px 8px;
     margin: auto;
@@ -101,7 +101,7 @@
 /* Roles */
 /* oh that was an easy fix */
 
-[aria-label="Roles"]:before {
+[aria-label*="Role"]:before {
 	content: "ROLES";
 	font-size: 13px;
 	color: var(--header-secondary);
@@ -111,7 +111,7 @@
 	margin-bottom: 4px;
 }
 
-[aria-label="Roles"] {
+[aria-label*="Role"] {
 	margin-bottom: 50px !important;
 }
 
@@ -149,60 +149,63 @@
 	left: 190px; 
 }
 
-._63ed30c16c7151f2-container {
+.container__63ed3 {
     border-bottom: 1px solid rgba(128,128,128,0.33); 
-    padding-bottom: 70px; /* 50px if with status */
+    padding-bottom: 70px;
 }
+
+
 
 
 
 /* status */
 
-.ab86098b36386ff7-container {
-	top: 200px !important;
+.container_ab8609 {
+	top: 210px !important; /* New Discord update broke this I think idk */
 	left: 15px !important;
 }
 
-.ab86098b36386ff7-content {
-	min-width: 240px;
-}
-.ab86098b36386ff7-referenceContainer {
-	display: none !important;
-}
-.ab86098b36386ff7-outer,
-.ab86098b36386ff7-inner {
-	border: none ;
+
+.outer_ab8609,
+.inner_ab8609 {
+	border: none;
 	background: none;
 	text-align: left;
 	box-shadow: none;
 	border-radius: 0px !important;
-	min-width: 260px !important;
+	min-width: 250px !important;
 	min-height: 50px !important;
 }
-.ab86098b36386ff7-outer:before,
-.ab86098b36386ff7-outer:after {
+
+.inner_ab8609 {
+	padding: 0px !important;
+	left: 10px;
+}
+
+.outer_ab8609:before,
+.outer_ab8609:after {
 	display: none;
 }
-.ab86098b36386ff7-outer {
+.outer_ab8609 {
 	background: transparent;
 }
 
-.ab86098b36386ff7-outer, .ab86098b36386ff7-outer:before,.ab86098b36386ff7-outer:after {
+.outer_ab8609, .outer_ab8609:before,.outer_ab8609:after {
 	box-shadow: none;
 	z-index: 1;
 	background: transparent;
 	top: 117px !important;
 }
 
-.custom-profile-theme.theme-dark .ab86098b36386ff7-outer {
+.custom-profile-theme.theme-dark .outer_ab8609 {
 	border: none;
 }
 
-.custom-profile-theme.theme-light .ab86098b36386ff7-outer {
+.custom-profile-theme.theme-light .outer_ab8609 {
 	border: none;
 }
 
-.ab86098b36386ff7-content {
+.conent_ab8609 {
   overflow: visible !important;
   -webkit-line-clamp: 40 !important;
 }
@@ -214,7 +217,7 @@
 /* from milbits/OldCord thanks */
 
 
-._63ed30c16c7151f2-nicknameIcons {
+.nicknameIcons__63ed3 {
 	top: calc(100% - 50px);
 	position: absolute;
 	display: flex !important;
@@ -230,11 +233,11 @@
 		width: 0;
 
 	}
-	& ._0f0745937100f096-button {
+	& .button__0f074 {
 		opacity: 1;
 		width: 10px;
 	}
-	& .b18fe29d6fe8dd82-hiddenVisually:before {
+	& .hiddenVisually_b18fe2:before {
 		content: "NOTE";
 		position: absolute;
 		margin-top: -17px;
@@ -243,10 +246,10 @@
 		font-family: var(--font-display);
 		font-size: 13px;
 	}
-	& ._0f0745937100f096-button svg {
+	& .button__0f074 svg {
 		display: none;
 	}
-	& .b18fe29d6fe8dd82-hiddenVisually {
+	& .hiddenVisually_b18fe2 {
 		display: inline-block;
 		align-content: start;
 		text-align: left;
@@ -282,7 +285,7 @@
 	}
 }
 
-._5be3ef42f92174b2-footer:is(:empty) {
+.footer__5be3e:is(:empty) {
 	display: none;
 }
 
