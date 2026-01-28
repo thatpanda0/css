@@ -1,7 +1,7 @@
 /**
  * @name Discord-
  * @author me.
- * @version 1.3-beta
+ * @version 1.3-beta2
  * @description collection of snippets
 */
 
@@ -17,6 +17,15 @@
   --font-display: "Inter", sans-serif;
   --font-code: Consolas, Menlo, Monaco, "Courier New", monospace;
 }
+
+.theme-dark {
+  --othermsg: #333 !important;
+}
+
+.theme-light {
+ --othermsg: #eee !important;
+}
+
 
 
 /* ------------ Uh I forgot but I think it's server icon size ------------ */
@@ -57,18 +66,18 @@
 
 /* No activity section */
 
-._133bf5eea8e33a34-nowPlayingColumn {
+.nowPlayingColumn__133bf {
 	display: none !important;
 }
 
-.cc61794aab086a2e-peopleListItem {
+.peopleListItem_cc6179 {
 	padding-top: 54px !important;
 	padding-bottom: 54px !important;
 }
 
 /* Guild tags in profile REALLY annoy me */
 
-._63ed30c16c7151f2-guildTagContainer {
+.guildTagContainer__63ed3 {
 	display: none !important;
 }
 
@@ -116,34 +125,56 @@
 }
 
 /* ------------ No top bar? ------------ */
-/* Only macOS (15.7.2/Sequoia) tested */
+/* Only macOS (15.7.3/Sequoia) tested */
 /* Tweak the "right: 120px" as needed, depending on the amount of top-bar icons you have */
 
-.c38106a3f0c3ca76-trailing { /* top bar icons */
+.trailing_c38106 { /* top bar icons */
 	z-index: 101 !important;
 	top: 8px !important;
 }
 
-._9293f6b2fc12398a-toolbar { /* channel bar icons */
+.toolbar__9293f { /* channel bar icons */
 	right: 100px !important;
 	position: relative !important;
 }
 
 /* I did some ... really weird stuff */
+/* For some reason, this breaks when you copy-paste something into the message bar?? */
 
-._5e434347c823b592-page,
-._5e434347c823b592-sidebarList {
+.page__5e434,
+.sidebarlist__5e434 {
 	height: 100vh !important;
 	top: 0px !important;
 	position: relative !important;
 }
 
-._5e434347c823b592-content {
+.content__5e434 {
 	height: 200vh !important;
-	top: -40px !important;
+	top: -37px !important;
 	position: relative !important;
 }
 
 [aria-label="Servers sidebar"] {
 	top: 40px !important;
+}
+
+/* ------------ Message blobs ------------ */
+
+/* All (general) */
+
+.contents_c19a55 .messageContent_c19a55 {
+	background-color: var(--othermsg) !important;
+	max-width: 650px;
+	width: fit-content;
+	margin: 0;
+	padding: 8px;
+	border-radius: 15px;
+}
+
+/* My (your) messages */
+
+[data-is-self="true"] .contents_c19a55 .messageContent_c19a55 {
+	background: #357bf7 !important;
+	color: #fff;
+	display: block;
 }
