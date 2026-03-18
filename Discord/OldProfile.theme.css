@@ -1,10 +1,26 @@
 /**
  * @name OldProfile
  * @author That Panda
- * @version 1
+ * @version 1.1
  * @description Old 2023 Discord Profile.
 */
 
+/* ------------ TODO ------------ */
+
+- Make pronouns on a new line for profiles
+- Fix being unable to edit notes
+- Fix misalignment of active activities
+- Fix box border on status: Dark mode
+
+/* ------------ END TODO ------------ */
+
+
+
+
+
+
+
+/* ------------ Custom variables ------------ */
 
 .theme-dark {
   --header-secondary: #fff !important;
@@ -15,8 +31,8 @@
 }
 
 
+/* ------------ Basic description definitions idk ------------ */
 
-/* Body 1 */
 
 .viewFullBio_f5f93a {
 	display: none;
@@ -31,7 +47,7 @@
 
 /* No extra spacing if have role */
 
-:root:not(:has([aria-label*="Role"])) .descriptionClamp_f5f93a {
+:root:not(:has([aria-label^="Role"])) .descriptionClamp_f5f93a {
   margin-bottom: 40px;
 }
 
@@ -97,11 +113,9 @@
 }
 
 
+/* ------------ Roles ------------ */
 
-/* Roles */
-/* oh that was an easy fix */
-
-[aria-label*="Role"]:before {
+[aria-label^="Role"]:before {
 	content: "ROLES";
 	font-size: 13px;
 	color: var(--header-secondary);
@@ -111,42 +125,37 @@
 	margin-bottom: 4px;
 }
 
-[aria-label*="Role"] {
+[aria-label^="Role"] {
 	margin-bottom: 50px !important;
 }
 
 
-/* before you yell at me I CANNOT figure out how to retain the hover for badges while not intersecting with status */
-/* Badges */
+/* ------------ Badges ------------ */
 
 
 .custom-profile-theme.theme-dark [aria-label="User Badges"] {
-	display: flex; /* replace with display: none; for no badges */
+	display: flex;
 	padding: 4px;
 	border-radius: 10px;
 	background: rgba(0,0,0,0.3) !important;
 }
 
 .custom-profile-theme.theme-light [aria-label="User Badges"] {
-	display: flex; /* replace with display: none; for no badges */
+	display: flex;
 	padding: 4px;
 	border-radius: 10px;
 	background: rgba(255,255,255,0.5) !important;
 }
 
 [aria-label="User Badges"] {
-	display: flex; /* replace with display: none; for no badges */
+	display: flex;
 	padding: 4px;
 	border-radius: 10px;
 	background: rgba(200,200,200,0.1) !important;
-}
 
-[aria-label="User Badges"] {
 	position: absolute;
-	display: flex !important;
 	margin-top: -130px;
-	/* triage for placement of badges */
-	left: 190px; 
+	right: 0px; 
 }
 
 .container__63ed3 {
@@ -154,14 +163,10 @@
     padding-bottom: 70px;
 }
 
-
-
-
-
-/* status */
+/* ------------ Status ------------ */
 
 .container_ab8609 {
-	top: 210px !important; /* New Discord update broke this I think idk */
+	top: 210px !important;
 	left: 15px !important;
 }
 
@@ -211,10 +216,8 @@
 }
 
 
-
-
-/* experimenting with notes */
-/* from milbits/OldCord thanks */
+/* ------------ experimenting with Notes and footer ------------ */
+/* ------------ from milbits/OldCord thanks ------------ */
 
 
 .nicknameIcons__63ed3 {
@@ -289,16 +292,8 @@
 	display: none;
 }
 
+/* ------------ Miscellaneous and testing ------------ */
 
-/* friend button */
-
-.da589062f0c96515-wrapper {
-	background: transparent !important;
-	opacity: 0.1;
-}
-
-
-/* goo (no Game collection) */
 
 [aria-label="Game Collection"] {
   display: none !important;
