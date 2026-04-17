@@ -1,0 +1,167 @@
+{
+    "name": "Google M3",
+    "description": "Google M3 with some colours extrapolated from Google Photos, derived from RainTheme",
+    "authors": [
+        {
+            "name": "LampDelivery",
+            "id": "650805815623680030"
+        },
+        {
+            "name": "Eri",
+            "id": "1464092788336361502"
+        }
+    ],
+    "semanticColors": {
+        "HEADER_PRIMARY": [
+            "#1f1f1f"
+        ],
+        "HEADER_SECONDARY": [
+            "#444746"
+        ],
+        "TEXT_NORMAL": [
+            "#1f1f1f"
+        ],
+        "TEXT_MUTED": [
+            "#444746"
+        ],
+        "MOBILE_TEXT_HEADING_PRIMARY": [
+            "#1f1f1f"
+        ],
+        "INTERACTIVE_HOVER": [
+            "#a8c7fa"
+        ],
+        "INTERACTIVE_ACTIVE": [
+            "#0b57d0"
+        ],
+        "INTERACTIVE_MUTED": [
+            "#747775"
+        ],
+        "BACKGROUND_PRIMARY": [
+            "#fff"
+        ],
+        "BACKGROUND_SECONDARY": [
+            "#f0f4f9"
+        ],
+        "BACKGROUND_SECONDARY_ALT": [
+            "#e9eef6"
+        ],
+        "BACKGROUND_SURFACE_HIGH": [
+            "#e9eef6"
+        ],
+        "CARD_BACKGROUND_DEFAULT": [
+            "#f8fafd"
+        ],
+        "BACKGROUND_TERTIARY": [
+            "#e1e3e1"
+        ],
+        "BACKGROUND_ACCENT": [
+            "#0b57d0"
+        ],
+        "BACKGROUND_FLOATING": [
+            "#fff"
+        ],
+        "BACKGROUND_MOBILE_PRIMARY": [
+            "#fff"
+        ],
+        "BACKGROUND_MOBILE_SECONDARY": [
+            "#f0f4f9"
+        ],
+        "BACKGROUND_NESTED_FLOATING": [
+            "#f8fafd"
+        ],
+        "BACKGROUND_MESSAGE_HOVER": [
+            "#f8fafd"
+        ],
+        "BACKGROUND_MODIFIER_HOVER": [
+            "#f8fafd"
+        ],
+        "BACKGROUND_MODIFIER_ACTIVE": [
+            "#e9eef6"
+        ],
+        "BACKGROUND_MODIFIER_SELECTED": [
+            "#d3e3fd"
+        ],
+        "BACKGROUND_MODIFIER_ACCENT": [
+            "#f0f4f9"
+        ],
+        "SCROLLBAR_THIN_THUMB": [
+            "#c4c7c5"
+        ],
+        "SCROLLBAR_THIN_TRACK": [
+            "transparent"
+        ],
+        "SCROLLBAR_AUTO_THUMB": [
+            "#a8c7fa"
+        ],
+        "SCROLLBAR_AUTO_TRACK": [
+            "#c2e7ff"
+        ],
+        "CHANNELTEXTAREA_BACKGROUND": [
+            "#e1e3e1"
+        ],
+        "CHANNELS_DEFAULT": [
+            "#444746"
+        ],
+        "TEXT_LINK": [
+            "#0b57d0"
+        ],
+        "TEXT_DANGER": [
+            "#b3261e"
+        ],
+        "KEYBOARD": [
+            "#f0f4f9"
+        ],
+        "BG_BACKDROP": [
+            "#000000B2"
+        ],
+        "REDESIGN_BUTTON_SECONDARY_BACKGROUND": [
+            "#d3e3fd"
+        ],
+        "CHANNEL_ICON": [
+            "#444746"
+        ],
+        "CHAT_BACKGROUND": [
+            "#fff"
+        ],
+        "CARD_PRIMARY_BG": [
+            "#f0f4f9"
+        ]
+    },
+    "rawColors": {
+        "PRIMARY_500": "#0b57d0",
+        "PRIMARY_100": "#fff",
+        "PRIMARY_200": "#d3e3fd",
+        "PRIMARY_300": "#a8c7fa",
+        "PRIMARY_360": "#0b57d0",
+        "PRIMARY_400": "#0b57d0",
+        "PRIMARY_600": "#f0f4f9",
+        "PRIMARY_630": "#e9eef6",
+        "PRIMARY_660": "#f8fafd",
+        "PRIMARY_700": "#f0f4f9",
+        "PRIMARY_800": "#dde3ea",
+        "BLACK_500": "#000",
+        "BRAND_260": "#a8c7fa",
+        "BRAND_360": "#0b57d0",
+        "BRAND_500": "#0b57d0",
+        "BRAND_560": "#041e49",
+        "YELLOW_300": "#a8c7fa",
+        "GREEN_600": "#146c2e",
+        "RED_400": "#b3261e",
+        "WHITE_500": "#fff",
+        "GREEN_360": "#6dd58c",
+        "PLUM_23": "#f0f4f9",     
+        "PLUM_20": "#fff",
+        "PLUM_18": "#f8fafd",
+        "PLUM_17": "#e9eef6",
+        "PLUM_16": "#0b57d0",
+        "PLUM_13": "#a8c7fa",
+        "PLUM_10": "#444746",
+        "PLUM_3": "#1f1f1f",
+        "PLUM_9": "#1f1f1f"
+ },
+ "plus": {
+    "version": "0",
+    "iconpack": "md3"
+ },
+ "spec": 2
+}
