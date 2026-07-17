@@ -1,70 +1,47 @@
 /**
- * @name Discord- (macOS)
- * @author me.
- * @version 1.3-beta2
- * @description collection of snippets
+ * @name Discord+
+ * @author that_panda
+ * @version 1.3-b3
+ * @description Tweaks for Discord that make it slightly better
 */
 
 
-/* ------------ Fonts, imports ------------ */
+/* ------------------------ Fonts, imports ------------------------ */
 
-
-@import url("https://scattagain.github.io/VencordStuff/css/GuildbarRevert.css");
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
   --font-primary: "Inter", sans-serif;
   --font-display: "Inter", sans-serif;
   --font-code: Consolas, Menlo, Monaco, "Courier New", monospace;
-}
-
-.theme-dark {
-  --othermsg: #333 !important;
+  --custom-guild-list-padding: 12px;
 }
 
 .theme-light {
- --othermsg: #eee !important;
+  --border-sidebar: #e4e4e4;
+  --othermsg: #f0f0f0 !important;
+  --ymsg: linear-gradient(to right, #fcedfc, #fce6ef);
 }
 
-
-
-/* ------------ Uh I forgot but I think it's server icon size ------------ */
-
-:root {
-    --guildbar-avatar-size: 48px;
-    --blob-scale: 48;
-
-    --guildbar-folder-size: var(--guildbar-avatar-size);
-    --folder-blob-scale: var(--blob-scale);
-}
-.visual-refresh div[class^="sidebar_"] section[class^="panels_"] {
-    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px);
-    left: var(--custom-guild-list-width);
-    bottom: 0px;
-    border-radius: 0px;
-    border: none;
+.theme-dark {
+  --border-sidebar: #333;
+  --othermsg: #333 !important;
+  --ymsg: #280038 !important;
 }
 
-.visual-refresh nav[class*=guilds_] {
-  margin-bottom: unset;
-}
-
-
-/* ------------ Remove junk ------------ */
+/* ------------------------ Remove junk ------------------------ */
 /* Obviously if you want stuff back just delete it from code */
 
 
 [href="/store"],
 [href="/shop"],
-[aria-label="Text icon"],
 [aria-label="Inbox"],
 [aria-label="Open Quick Switcher"],
 [aria-label="Submit a Bug Report"] {
 	display: none !important;
 }
 
-
-/* No activity section */
+/* No activities */
 
 .nowPlayingColumn__133bf {
 	display: none !important;
@@ -85,7 +62,13 @@
 	border-top: none !important;
 }
 
-/* ------------ My personal preferences ------------ */
+/* Whatever is at the bottom of serverlist */
+
+.wrapper_ef3116 {
+	margin-bottom: 0px !important;
+}
+
+/* ------------------------ My personal preferences ------------------------ */
 /* Basically thicker stuff */
 /* Friends and Quests tab on default screen */
 
@@ -97,74 +80,104 @@
 
 /* Channels thick */
 
-._2ea32c412048f708-linkTop {
-	padding-top: 14px !important;
-	padding-bottom: 14px !important;
+.linkTop__2ea32 {
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
 }
 
 [aria-label*="(direct message)"] {
-	padding-top: 14px !important;
-	padding-bottom: 14px !important;
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
 }
 
-/* ------------ No user area ------------ */
+
+/* ------------------------ No user area ------------------------ */
 /* Even though the "top/bottom: 0px" seemingly have no effect they actually do somehow */
 
-
-[aria-label="User area"] {
+[aria-label="User status and settings"] {
 	border-radius: 0px !important;
 	border: none !important;
 	width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - 21px) !important;
-	background: var(--background-gradient-high, var(--background-base-lowest)) !important;
-	left: 82px !important;
+	background: transparent /* var(--background-gradient-high, var(--background-base-lowest)) */ !important;
+	left: 72px !important;
 	bottom: 0px !important;
 }
 
-._37e49614b9f110a9-container {
+.sidebar__5e434:after { /* Also user area but I have to use the weird version */
+	display:none !important;
+}
+
+.container__37e49 {
 	padding: 0px !important;
 }
 
-/* ------------ No top bar? ------------ */
-/* Only macOS (15.7.3/Sequoia) tested */
-/* Tweak the "right: 120px" as needed, depending on the amount of top-bar icons you have */
-
-.trailing_c38106 { /* top bar icons */
-	z-index: 101 !important;
-	top: 8px !important;
+[aria-label="Go back"],
+[aria-label="Go forward"] {
+	display: none !important;
 }
 
-.toolbar__9293f { /* channel bar icons */
-	right: 100px !important;
-	position: relative !important;
+
+
+/* Window buttons are full height */
+
+.winButton_c38106 {
+	width: 48px !important;
 }
 
-/* I did some ... really weird stuff */
-/* For some reason, this breaks when you copy-paste something into the message bar?? */
 
-.page__5e434,
-.sidebarlist__5e434 {
-	height: 100vh !important;
-	top: 0px !important;
-	position: relative !important;
+
+/* ------------------------ Titlebar, servers, DMs and channels ------------------------ */
+
+.theme-light .base__5e434, /* base = titlebar, guilds = server bar*/
+.theme-light .guilds__5e434 {
+	background: #eee; /* linear-gradient(135deg, #eaeaff, #fff3e3) !important; */
 }
 
-.content__5e434 {
-	height: 200vh !important;
-	top: -37px !important;
-	position: relative !important;
+.theme-light [aria-label="Private channels"], /* Sidebar [Servers] */
+.theme-light [data-list-id^="private-channels"],
+.theme-light [aria-label*="(server)"] {
+	background: #fafafa; /* linear-gradient(160deg, #faf9ff, #fffbf3) !important; */
 }
 
-[aria-label="Servers sidebar"] {
-	top: 40px !important;
+.title_edbb22 { /* name of server in titlebar*/
+	display: none !important;
 }
 
-/* ------------ Message blobs ------------ */
+.sidebarList__5e434 /* Sidebar (general) */ {
+	border-inline-start: 1px solid var(--border-sidebar);
+	border-top: 1px solid var(--border-sidebar);
+	border-top-right-radius: var(--radius-md);
+	margin-right: 10px !important;
+}
 
+.page__5e434 /* Page content */ {
+	border-top-left-radius: var(--radius-md);
+}
+
+.theme-light .chatContent_f75fb0 /* Page color (where header??) */{
+	background: #fbfbfb; /* linear-gradient(150deg, #faf9ff, #fffbf3) !important; */
+}
+
+/* ------------------------ testing ------------------------ */
+
+.icon_caf372 { /* No icons in settings */
+	display: none !important;
+}
+
+.folderPreviewGuildIcon__48112 { /* Icons inside folder */
+	border-radius: 500px !important;
+}
+
+.blobContainer_e5445c {
+	border-radius: 500px !important;
+}
+
+/* -------- More testing: message bubbles --------- */
 /* All (general) */
 
 .contents_c19a55 .messageContent_c19a55 {
 	background-color: var(--othermsg) !important;
-	max-width: 650px;
+	max-width: 60vw;
 	width: fit-content;
 	margin: 0;
 	padding: 8px;
@@ -174,7 +187,35 @@
 /* My (your) messages */
 
 [data-is-self="true"] .contents_c19a55 .messageContent_c19a55 {
-	background: #357bf7 !important;
-	color: #fff;
+	background: var(--ymsg) !important;
 	display: block;
+}
+
+/* ----- Titlebar (actually) ----- */
+
+.page__5e434,
+.sidebarList__5e434 {
+	margin-top: -40px !important;
+	height: 100vh !important;
+}
+
+.content__5e434 {
+	margin-top: -40px !important;
+}
+
+/* ----- Icons and fixes (Windows) ----- */
+
+.toolbar__9293f,
+.searchBar__1ac1c {
+	margin-right: 220px !important;
+}
+
+.trailing_c38106 {
+	margin-top: 16px !important;
+	z-index: 999 !important;
+}
+
+
+[aria-label="Servers sidebar"] {
+	margin-top: 16px !important;
 }
