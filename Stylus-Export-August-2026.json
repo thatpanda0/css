@@ -1,0 +1,574 @@
+[
+  {
+    "settings": {
+      "disableAll": false,
+      "exposeIframes": true,
+      "exposeIframes.sites": "",
+      "exposeIframes.sitesOnly": false,
+      "exposeStyleName": false,
+      "keepAlive": 0,
+      "keepAliveIdle": false,
+      "newStyleAsUsercss": false,
+      "openEditInWindow": false,
+      "openEditInWindow.popup": false,
+      "patchCsp": true,
+      "patchCsp.sites": "",
+      "patchCsp.sitesOnly": false,
+      "show-badge": true,
+      "styleViaASS": true,
+      "styleViaASS.sites": "",
+      "styleViaASS.sitesOnly": false,
+      "styleViaXhr": false,
+      "styleViaXhr.sites": "",
+      "styleViaXhr.sitesOnly": false,
+      "urlInstaller": true,
+      "windowPosition": {
+        "left": 413,
+        "top": 139,
+        "width": 1507,
+        "height": 894
+      },
+      "compactWidth": 850,
+      "config.autosave": true,
+      "schemeSwitcher.enabled": "system",
+      "schemeSwitcher.nightStart": "18:00",
+      "schemeSwitcher.nightEnd": "06:00",
+      "popup.enabledFirst": true,
+      "popup.stylesFirst": true,
+      "popup.autoResort": false,
+      "popup.borders": false,
+      "popup.findSort": "w",
+      "manage.onlyEnabled": false,
+      "manage.onlyLocal": false,
+      "manage.onlyUsercss": false,
+      "manage.onlyEnabled.invert": false,
+      "manage.onlyLocal.invert": false,
+      "manage.onlyUsercss.invert": false,
+      "manage.actions.expanded": false,
+      "manage.backup.expanded": true,
+      "manage.filters.expanded": true,
+      "manage.links.expanded": true,
+      "manage.minColumnWidth": 750,
+      "manage.newUI": true,
+      "manage.newUI.favicons": true,
+      "manage.newUI.faviconsGray": false,
+      "manage.newUI.targets": 3,
+      "manage.newUI.sort": "title,asc",
+      "manage.searchMode": "meta",
+      "editor.options": {},
+      "editor.toc.expanded": true,
+      "editor.options.expanded": true,
+      "editor.options.style.expanded": false,
+      "editor.general.expanded": true,
+      "editor.lint.expanded": true,
+      "editor.publish.expanded": false,
+      "editor.lineWrapping": true,
+      "editor.smartIndent": true,
+      "editor.indentWithTabs": false,
+      "editor.tabSize": 4,
+      "editor.keyMap": "sublime",
+      "editor.theme": "default",
+      "editor.beautify": {
+        "selector_separator_newline": true,
+        "newline_before_open_brace": false,
+        "newline_after_open_brace": true,
+        "newline_between_properties": true,
+        "newline_before_close_brace": true,
+        "newline_between_rules": false,
+        "preserve_newlines": true,
+        "end_with_newline": false,
+        "indent_conditional": true,
+        "indent_mozdoc": true,
+        "space_around_combinator": true,
+        "space_around_cmp": false
+      },
+      "editor.beautify.hotkey": "",
+      "editor.toggle.hotkey": "Alt-Enter",
+      "editor.toggle.save": false,
+      "editor.linter": "csslint",
+      "editor.linter.on": true,
+      "editor.lintReportDelay": 500,
+      "editor.matchHighlight": "token",
+      "editor.autoCloseBrackets": true,
+      "editor.autocompleteOnTyping": false,
+      "editor.contextDelete": false,
+      "editor.selectByTokens": true,
+      "editor.arrowKeysTraverse": true,
+      "editor.appliesToLineWidget": true,
+      "editor.autosaveDraft": 10,
+      "editor.livePreview": true,
+      "editor.livePreview.delay": 0.2,
+      "editor.targetsFirst": true,
+      "editor.colorpicker": true,
+      "editor.colorpicker.hexUppercase": 0,
+      "editor.colorpicker.hotkey": "",
+      "editor.colorpicker.color": "",
+      "editor.colorpicker.maxHeight": 300,
+      "hotkey._execute_browser_action": "",
+      "hotkey.openManage": "",
+      "hotkey.styleDisableAll": "",
+      "hotkey.toggleTab": "",
+      "sync.enabled": "none",
+      "iconset": -1,
+      "badgeDisabled": "#8B0000",
+      "badgeNormal": "#006666",
+      "headerWidth.edit": 280,
+      "headerWidth.install": 280,
+      "headerWidth.manage": 280,
+      "popup.search.globals": false,
+      "popup.sidePanel": false,
+      "popup.sidePanel.config": -1,
+      "popup.sidePanel.editor": false,
+      "popup.sidePanel.finder": false,
+      "popup.sidePanel.manager": false,
+      "popup.sidePanel.options": true,
+      "popup.toggler.expanded": false,
+      "popupWidth": 246,
+      "popupWidthMax": 280,
+      "updateInterval": 24,
+      "updateOnlyEnabled": false
+    },
+    "order": {
+      "main": [],
+      "prio": []
+    }
+  },
+  {
+    "enabled": true,
+    "installDate": 1772248916245,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name         bongocatyt\n@namespace    USO Archive\n@author       obscurus_one\n@description  Change YouTube and YouTube Music to Bongo Cat!\n@version      20251203\n@license      NONE\n@preprocessor uso\n==/UserStyle== */\n@-moz-document domain(\"youtube.com\") {\n    ytd-logo {\n        content: url(\"https://media.tenor.com/l0j7icPiGX8AAAAi/%D0%BD%D1%8F%D1%91%D0%B6.gif\") !important;\n        width: 140px !important;\n        height: 120px !important;\n        object-fit: contain !important;\n        object-position: center 5px!important;\n        margin-left: -15px\n    }\n    ytd-topbar-logo-renderer {\n        width: 0%;\n    }\n    ytd-yoodle-renderer {\n        width: 0%;\n    }\n}\n@-moz-document domain(\"music.youtube.com\") {\n    ytmusic-logo {\n        content: url(\"https://media.tenor.com/l0j7icPiGX8AAAAi/%D0%BD%D1%8F%D1%91%D0%B6.gif\") !important;\n        width: 140px !important;\n        height: 120px !important;\n        object-fit: contain !important;\n        object-position: center 5px!important;\n        margin-left: -15px\n    }\n}",
+    "usercssData": {
+      "name": "bongocatyt",
+      "namespace": "USO Archive",
+      "author": "obscurus_one",
+      "description": "Change YouTube and YouTube Music to Bongo Cat!",
+      "version": "20251203",
+      "license": "NONE",
+      "preprocessor": "uso"
+    },
+    "author": "obscurus_one",
+    "description": "Change YouTube and YouTube Music to Bongo Cat!",
+    "name": "bongocatyt",
+    "updateUrl": "https://userstyles.world/api/style/25409.user.css",
+    "originalDigest": "aefff6dfb46ca799cafb79b4edb9f6a1b5d454b2",
+    "_id": "639c5db1-bfe6-4f84-89e0-08ff6f3137e6",
+    "_rev": 1772248916246,
+    "url": "https://userstyles.world/style/25409",
+    "installationUrl": "https://userstyles.world/style/25409",
+    "id": 1
+  },
+  {
+    "enabled": true,
+    "installDate": 1772248926120,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           Youtube Music Supreme\n@namespace      Ryo\n@version        4.0.0\n@description    Youtube Music Enhanced\n@author         RYO.O - youtube.com/@ryotoiday\n@license        CC BY-NC-ND 4.0\n@preprocessor   stylus\n\n\n@var            select backgroundOption \"Theme\" [\"Purple\",\"Orange\",\"Aurora\",\"Dusk\",\"Cherry\"]\n@var            select logoOption \"Logo\" [\"Sans\",\"Vercel\"]\n@var            text   bannerUrl  \"Banner URL\" url(\"https://github.com/ryokr/Share/raw/main/Banners/wolf_children_chill.gif\")\n\n\n==/UserStyle== */\n@-moz-document domain(\"music.youtube.com\") {\n\n:root {\n    --r-bg-grad-dusk: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), linear-gradient(135deg, #ffc3a0 0%, #ffbbec 50%, #a9c9ff 100%);\n    --r-bg-grad-purple: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), linear-gradient(135deg, #ffc3a0 0%, #CC59B9 50%, #794fcd 80%);\n    --r-bg-grad-orange: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, .65)), linear-gradient(135deg, #FED686 0%, #f08461 50%, #FF6D3E 80%);\n    --r-bg-grad-cherry: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, .65)), linear-gradient(135deg, #DD0872 0%, #970a50 40%, #0D2043 70%);\n    --r-bg-grad-aurora: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, .65)), linear-gradient(135deg, #27DC60 0%, #257674 50%, #4c2979 70%);\n\n    --r-bg-grad-ani: url(\"https://www.gstatic.com/youtube/img/promos/growth/music_premium_lp2_header_background_dark_1440x578.webp\");\n    --r-bg-img-robin: url(\"https://github.com/ryokr/Share/raw/main/Assets/robin2.jpg\");\n    --r-banner-img: bannerUrl\n    \n\n    /* Logo*/\n    --r-logo-verc: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 75 65' fill='white'%3E%3Cpath d='M37.59.25l36.95 64H.64l36.95-64z'/%3E%3C/svg%3E\");\n    --r-logo-sans: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100.653 24'%3E%3Cellipse cx='12.2' cy='12' rx='12.2' ry='12' fill='%23FF0000'/%3E%3Cellipse cx='12.2' cy='12' rx='7.3' ry='7.2' fill='%23FF0000' stroke='%23FFFFFF' stroke-width='1.2'/%3E%3Cpolygon points='9.7,15.5 16.1,12 9.7,8.5' fill='%23FFFFFF'/%3E%3Cpath d='m 29.0652,4.3800001 v -1.1142 h 0.243 l 0.324,0.6804 0.3222,-0.6804 h 0.243 v 1.1142 h -0.2502 v -0.5652 l -0.2376,0.5292 H 29.553 l -0.2376,-0.5292 v 0.5652 z m 1.310402,-0.9 h 0.243 v 0.522 q 0,0.09 0.0306,0.1314 0.0324,0.0396 0.1026,0.0396 0.0684,0 0.099,-0.0396 0.0324,-0.0414 0.0324,-0.1314 v -0.522 h 0.243 v 0.522 q 0,0.1926 -0.0954,0.2934 -0.0954,0.1008 -0.2808,0.1008 -0.1836,0 -0.279,-0.1008 -0.0954,-0.1008 -0.0954,-0.2934 z m 0.865801,0.801 0.0864,-0.1926 q 0.0702,0.054 0.1206,0.0738 0.0504,0.018 0.1188,0.018 0.1152,0 0.1152,-0.0666 0,-0.027 -0.0288,-0.0468 -0.0288,-0.0198 -0.1026,-0.045 -0.1242,-0.0432 -0.1782,-0.0846 -0.0954,-0.0702 -0.0954,-0.1962 0,-0.126 0.09,-0.2016 0.09,-0.0756 0.2394,-0.0756 0.1692,0 0.2898,0.09 l -0.0864,0.1944 q -0.099,-0.0666 -0.1998,-0.0666 -0.09,0 -0.09,0.0576 0,0.0234 0.0234,0.0396 0.0234,0.0144 0.0954,0.0378 0.1584,0.0504 0.2232,0.1188 0.0666,0.0666 0.0666,0.1746 0,0.1332 -0.0954,0.2106 -0.0936,0.0756 -0.2574,0.0756 -0.1998,0 -0.3348,-0.1152 z m 1.157397,0.1062 h -0.0702 q -0.1386,0 -0.2016,-0.0648 -0.0612,-0.0648 -0.0612,-0.2124 v -0.63 h 0.243 v 0.6138 q 0.0018,0.0378 0.0072,0.0504 0.0072,0.0126 0.0288,0.0126 h 0.054 z m -0.2106,-1.2816 q 0.0594,0 0.099,0.0414 0.0414,0.0396 0.0414,0.099 0,0.0612 -0.0414,0.1026 -0.0396,0.0396 -0.1008,0.0396 -0.0612,0 -0.1008,-0.0396 -0.0396,-0.0396 -0.0396,-0.1008 0,-0.0612 0.0396,-0.1008 0.0414,-0.0414 0.1026,-0.0414 z m 1.052999,0.4806 -0.1098,0.1782 q -0.1134,-0.0792 -0.2088,-0.0792 -0.0864,0 -0.1368,0.0666 -0.0486,0.0648 -0.0486,0.18 0,0.117 0.0486,0.18 0.0504,0.063 0.144,0.063 0.0594,0 0.1062,-0.018 0.0468,-0.018 0.1116,-0.0666 l 0.1098,0.1782 q -0.0846,0.072 -0.1602,0.1008 -0.0756,0.027 -0.1836,0.027 -0.198,0 -0.3114,-0.1224 -0.1116,-0.1224 -0.1116,-0.3402 0,-0.216 0.1134,-0.342 0.1152,-0.1278 0.3096,-0.1278 0.099,0 0.171,0.027 0.0738,0.027 0.1566,0.0954 z' fill='%23FFFFFF' transform='matrix(17.058083 0 0 17.058083 -467.001129 -53.028473)'/%3E%3C/svg%3E%0A\");\n\n\n    /* Progress bar */\n    --r-scrubber-icon: url(https://raw.githubusercontent.com/ryokr/Share/main/Icons/shade.png) center center / 100% 100% no-repeat;\n    --r-scrubber-size: 24px;\n\n    /* Right control icon's color */\n    --r-icon-color: #00ff95;\n    --r-is-hidden: hidden;\n    \n\n    --r-animation-rotate: rotate /* 120s linear infinite */ none;\n}\n\n\nif logoOption==\"Sans\" { img.logo { content: var(--r-logo-sans); } }\nif logoOption==\"Vercel\" { img.logo { content: var(--r-logo-verc); } }\n\n\nif backgroundOption==\"Purple\" {\n    body:has(#layout[player-ui-state=\"PLAYER_PAGE_OPEN\"]) { background-image: var(--r-bg-grad-purple); }\n}\nif backgroundOption==\"Orange\" {\n    body:has(#layout[player-ui-state=\"PLAYER_PAGE_OPEN\"]) { background-image: var(--r-bg-grad-orange); }\n}\nif backgroundOption==\"Aurora\" {\n    body:has(#layout[player-ui-state=\"PLAYER_PAGE_OPEN\"]) { background-image: var(--r-bg-grad-aurora); }\n}\nif backgroundOption==\"Dusk\" {\n    body:has(#layout[player-ui-state=\"PLAYER_PAGE_OPEN\"]) { background-image: var(--r-bg-grad-dusk); }\n}\nif backgroundOption==\"Cherry\" {\n    body:has(#layout[player-ui-state=\"PLAYER_PAGE_OPEN\"]) { background-image: var(--r-bg-grad-cherry); }\n}\n\n\n\n@keyframes rotate {\n    from { transform: rotate(0deg); }\n    to { transform: rotate(360deg); }\n}\n\nbody:has(#layout[player-ui-state=\"PLAYER_PAGE_OPEN\"]) {\n    background-attachment: fixed;\n    background-repeat: no-repeat;\n    \n    #layout > #content { display: none; }\n    #player-page, #player, .html5-video-player { background: none; }\n}\n\n/* popup menu */\ntp-yt-paper-listbox, ytmusic-dialog {\n    background: #00000073;\n    backdrop-filter: blur(12px);\n    border-radius: 10px !important;\n}\n\nytmusic-multi-page-menu-renderer {\n    background: #00000073 !important; \n    backdrop-filter: blur(48px) !important;\n}\n\n\n#layout {\n    ytmusic-logo { margin-left: 16px; }\n    .history-button { display: block !important; }\n\n    #nav-bar-background {\n        background: transparent;\n        backdrop-filter: blur(12px);\n        border: none;\n    }\n    #nav-bar-divider { display: none !important; }\n    .center-content.ytmusic-nav-bar {\n        justify-content: center;\n        padding: 8px 10px 8px 0px;\n        margin: 0px;\n        \n        ytmusic-search-box {\n            .search-container { box-shadow: unset !important; }\n            .search-box { border-radius: 40px !important; }\n            #input::placeholder { color: transparent; }\n\n            #suggestion-list {\n                border-radius: 8px !Important;\n                top: 53px;\n                padding: unset;\n                border: none;\n            }\n        }\n    }\n    \n    ytmusic-chip-cloud-renderer { justify-content: center; }\n    \n    /* sidebar collapsed */\n    #mini-guide-background { border: unset; background: none; }\n    ytmusic-guide-entry-renderer[is-collapsed] .title { display: none; }\n    \n    /* sidebar */\n    tp-yt-app-drawer#guide {\n        #guide-wrapper {\n            background: none;\n            border: none;\n        }\n        #guide-content {\n            #guide-renderer {\n                background: rgba(255,255,255,.15);\n                backdrop-filter: blur(48px);\n                border-radius: 10px;\n                height: calc(100vh - var(--ytmusic-nav-bar-height) - 122px);\n                margin-left: 12px;\n                padding-bottom: 8px;\n            }\n        }\n        #sections > [is-primary] > div#buttons {\n            height: 140px;\n            background: var(--r-banner-img) no-repeat center/cover;\n            border-radius: 10px;\n            margin-bottom: 10px;\n        }\n    }\n    \n    /* playlist bg */\n    #content {\n        #browse-page[is-playlist-detail-page] .background-gradient { background: unset; }\n        \n        #header {\n            .gradient-container { background-color: unset; }\n\n            .buttons { visibility: hidden }\n            .metadata:hover .buttons { visibility: visible }\n        }\n        \n    }\n\n\n    /* video player */\n    #player-page > .content {\n        padding: var(--ytmusic-player-page-vertical-padding) var(--ytmusic-player-page-horizontal-padding);\n        \n        #side-panel {\n            background: rgba(255,255,255,.15);\n/*             backdrop-filter: blur(48px); */\n            border-radius: 12px;\n            padding: 12px;\n            \n            ytmusic-queue-header-renderer {\n                position: sticky;\n                top: 16px;\n/*                 background: #282B30; */\n                background: rgba(255,255,255,.25);\n                backdrop-filter: blur(48px);\n                border-radius: 12px;\n                z-index: 10;\n                padding: 16px;\n            }\n        }\n    }\n    #song-image img, #song-video video, .html5-video-player, .song-media-controls { border-radius: 10px; }\n    \n\n    /* rotate */\n    --r-rotate-state: running;\n    &:has(#left-controls #play-pause-button[title=Play]) { --r-rotate-state: paused; }\n    #song-image #thumbnail {\n        border-radius: 50%;\n        border: 2px solid white;\n        flex-shrink: 0;\n        overflow: hidden;\n        will-change: transform;\n        backface-visibility: hidden;\n        \n\n        animation: var(--r-animation-rotate);\n        animation-play-state: var(--r-rotate-state);\n    }\n\n    /* Mini player */\n    #player[player-ui-state=\"MINIPLAYER\"] {\n        background: none;\n/*         #song-media-window { background: none; } */\n    }\n    \n\n    /* bottom player */\n    --ytmusic-player-bar-height: 90px;\n    #player-bar-background {\n        background: rgba(255,255,255,.15);\n        backdrop-filter: blur(32px);\n        height: 97px;\n        border-radius: 10px;\n        right: 12px;\n        left: 12px;\n        bottom: 12px;\n    }\n    ytmusic-player-bar {\n        background: none;\n        grid-template-columns: 1fr 0.5fr 1fr;\n        grid-template-areas: \"start middle end\";\n        margin: 0 0 18px 24px;\n        width: calc(100vw - 48px);\n        \n\n        \n        #primaryProgress { background: linear-gradient(to right, #4e9bff 20%, #00ffc3 60%); }\n        #progress-bar {\n            #sliderKnob {\n                visibility: var(--r-is-hidden);\n                &::after {\n                    background: var(--r-scrubber-icon);\n                    position: absolute;\n                    content: \"\";\n\n                    left: 50%;\n                    top: 50%;\n                    transform: translate(-50%, -50%);\n\n                    width: var(--r-scrubber-size);\n                    height: var(--r-scrubber-size);\n                }\n            }\n            &:hover #sliderKnob { visibility: visible; }\n        }\n        \n        .middle-controls {\n            grid-area: start;\n            justify-content: left;\n            margin-top: 8px;\n            \n            .middle-controls-buttons {\n                #like-button-renderer { order: 1; margin: 0px 20px 0px -8px; }\n                #button-shape-dislike { display: none; }\n            }\n            \n            .thumbnail-image-wrapper {\n                width: 72px;\n                height: 72px;\n                border-radius: 50%;\n                border: 2px solid white;\n                flex-shrink: 0;\n                overflow: hidden;\n                will-change: transform;\n                backface-visibility: hidden;\n\n                animation: var(--r-animation-rotate);\n                animation-play-state: var(--r-rotate-state);\n\n                img {\n                    width: 100%;\n                    height: 100%;\n                    object-fit: cover;\n                }\n            }\n        }\n        \n        \n        #left-controls {\n            grid-area: middle;\n            justify-content: center;\n\n            .time-info {\n                position: absolute;\n                bottom: -2px;\n                margin: 0 0 0 8px;\n                background: rgba(255,255,255,.20);\n                border-radius: 50px;\n                color: white;\n                padding: 3px 8px 3px 7px;\n            }\n            .rewind-button, yt-icon-button:nth-last-of-type(2) { display: block !important; }\n\n        }\n        \n        #right-controls {\n            grid-area: end;\n            justify-content: center;\n            \n            #volume-slider {\n                width: 170px;\n                margin-right: 16px;\n                opacity: 1;\n                pointer-events: all;\n                cursor: pointer;\n                 \n                &::before {\n                    content: attr(aria-valuenow);\n                    position: absolute;\n                    left: -10px;\n                    font-size: 14px;\n                    color: #eaeaea;\n                }\n            }\n            #sliderKnob { display: none; }\n            .playback-rate { display: inline-block !important; margin: unset; }\n            .toggle-player-page-button { display: none; }\n        }\n    }\n    \n    ytmusic-playback-rate-renderer[has-custom-playback-rate] yt-icon-button.ytmusic-playback-rate-renderer,\n    ytmusic-player-bar:not([repeat-mode=NONE]) .repeat.ytmusic-player-bar,\n    ytmusic-player-bar[shuffle-on] .shuffle.ytmusic-player-bar, ytmusic-player-bar[shuffle-on] .expand-shuffle.ytmusic-player-bar\n    { color: var(--r-icon-color); }\n}\n\n\n\n}",
+    "usercssData": {
+      "name": "Youtube Music Supreme",
+      "namespace": "Ryo",
+      "version": "4.0.0",
+      "description": "Youtube Music Enhanced",
+      "author": "RYO.O - youtube.com/@ryotoiday",
+      "license": "CC BY-NC-ND 4.0",
+      "preprocessor": "stylus",
+      "vars": {
+        "backgroundOption": {
+          "type": "select",
+          "label": "Theme",
+          "name": "backgroundOption",
+          "value": "Dusk",
+          "default": "Purple",
+          "options": [
+            {
+              "name": "Purple",
+              "label": "Purple",
+              "value": "Purple"
+            },
+            {
+              "name": "Orange",
+              "label": "Orange",
+              "value": "Orange"
+            },
+            {
+              "name": "Aurora",
+              "label": "Aurora",
+              "value": "Aurora"
+            },
+            {
+              "name": "Dusk",
+              "label": "Dusk",
+              "value": "Dusk"
+            },
+            {
+              "name": "Cherry",
+              "label": "Cherry",
+              "value": "Cherry"
+            }
+          ]
+        },
+        "logoOption": {
+          "type": "select",
+          "label": "Logo",
+          "name": "logoOption",
+          "value": null,
+          "default": "Sans",
+          "options": [
+            {
+              "name": "Sans",
+              "label": "Sans",
+              "value": "Sans"
+            },
+            {
+              "name": "Vercel",
+              "label": "Vercel",
+              "value": "Vercel"
+            }
+          ]
+        },
+        "bannerUrl": {
+          "type": "text",
+          "label": "Banner URL",
+          "name": "bannerUrl",
+          "value": null,
+          "default": "url(\"https://github.com/ryokr/Share/raw/main/Banners/wolf_children_chill.gif\")",
+          "options": null
+        }
+      }
+    },
+    "author": "RYO.O - youtube.com/@ryotoiday",
+    "description": "Youtube Music Enhanced",
+    "name": "Youtube Music Supreme",
+    "updateUrl": "https://userstyles.world/api/style/23820.user.css",
+    "originalDigest": "a231b159e09d5d8f107e68e07b0e6de4abb932fd",
+    "_id": "b8868323-6024-42c3-a5a3-afd7b039edea",
+    "_rev": 1772249045221,
+    "url": "https://userstyles.world/style/23820",
+    "installationUrl": "https://userstyles.world/style/23820",
+    "id": 2,
+    "updateDate": 1772249045220
+  },
+  {
+    "enabled": true,
+    "installDate": 1772593809960,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==Userstyle==\n\n@name\tMathDash\n@namespace\tmathdash.com\n@version\tv0.5-B\n@description\tsee above\n@author\t\tChat\n==/Userstyle== */\n@-moz-document domain(\"mathdash.com\") {\n    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');\n\n\n    .bg-background {\n        background-color: rgb(245, 245, 245) !important;\n    }\n    .text-text,\n    .text-gray-100 {\n        color: #000 !important;\n        font-family: \"Inter\", sans-serif !important;\n    }\n\n    .dark {\n        --faintbox: #efefef !important;\n    }\n\n    p,\n    span,\n    strong {\n        user-select: auto;\n    }\n\n    .bg-blue-950,\n    .hover\\:bg-blue-600:hover {\n        background-color: #f3f3ff !important; /* so my peanut brain finally realised its actually hard to see. original is FAFAFF */\n    }\n\n    .font-sans {\n        font-family: \"Inter\", sans-serif !important;\n    }\n\n    .rounded-lg {\n        user-select: auto !important;\n    }\n\n    .hover\\:bg-primary-800:hover,\n    .hover\\:bg-primary-900:hover,\n    .hover\\:bg-gray-700:hover,\n    .bg-primary-900 {\n        background-color: #efe !important;\n    }\n\n    .resize-handle {\n        width: 4px !important;\n        background-color: #000 !important;\n    }\n\n    .bg-gray-500,\n    .bg-gray-900 {\n        background-color: #eee !important;\n    }\n\n    .bg-primary-500 {\n        background-color: #ccc;\n    }\n\n    .shadow-primary-500 {\n        --tw-shadow: none !important;\n    }\n\n    .border-primary-500 {\n        border-color: rgba(0, 0, 0, 0) !important;\n    }\n\n    .bg-faintbox {\n        background-color: rgba(255, 255, 255, 0.9) !important;\n        border-radius: 15px !Important;\n    }\n\n    .fill-primary-600 {\n        color: #ddd !important;\n    }\n\n    .border-black,\n    .border-gray-600,\n    .border-gray-700\\/50,\n    .border-gray-700 {\n        border: none !important;\n    }\n/*\n    .h-8 {\n        display: none !important;\n    }\nEnabling this nukes both problem solved in profile AND notification/chat buttons in top-right\n*/\n    .p-1 {\n        border-radius: 7px !Important;\n    }\n\n\n    a[href^=\"/contest/\"] {\n        background-color: #efefef !important;\n    }\n\n    .rounded-3xl {\n        background-color: #fefefe !important;\n    }\n\n    .bg-gray-800 {\n        background-color: #f9f9f9 !Important;\n    }\n\n    .hover\\:bg-background {\n        background-color: #fefefe !important;\n    }\n\n    .mx-2 {\n        overflow: hidden !important;\n    }\n\n    /* Chromium and Firefox */\n    .overflow-y-auto::-webkit-scrollbar,\n    div::-webkit-scrollbar {\n        display: none !important;\n    }\n\n    .overflow-y-auto {\n        scrollbar-width: none;\n    }\n\n    .hover\\:bg-gray-800:hover {\n        background-color: rgba(255, 255, 255, 0) !important;\n    }\n\n    .h-3\\/5 {\n        background-image: url('https://raw.githubusercontent.com/thatpanda0/b/refs/heads/master/assets/backgroundb.jpg') !important;\n    }\n\n    .css-1g2lvy1,\n    .css-d0zi81 {\n        font-family: \"Inter\", sans-serif;\n        color: #000 !Important;\n    }\n\n    .bg-gray-900\\/70,\n    .bg-gray-800\\/60,\n    .bg-gray-900\\/50 {\n        background-color: rgba(230, 230, 230, 0.9) !important;\n    }\n\n    .bg-gray-800\\/50 {\n        background-color: rgba(200, 200, 200, 0.9) !important;\n    }\n\n    .text-gray-400,\n    .text-white {\n        color: #000 !important;\n    }\n\n    .font-medium {\n        color: #000 !important;\n    }\n\n    .to-black,\n    .to-gray-800 {\n        --tw-gradient-to: #fff !Important;\n    }\n\n    .from-gray-950,\n    .from-gray-900 {\n        --tw-gradient-from: #f3f3f3 !important;\n    }\n\n    .bg-gray-700 {\n        background-color: #888 !important;\n    }\n\n    .css-9n3ag9,\n    .css-6d7p5q {\n        font-family: \"Inter\", sans-serif;\n        color: #000 !Important;\n        border-color: #000 !important;\n    }\n    .bg-red-950 {\n        background-color: #fff3f3 !important; /* same here */\n    }\n    img {\n        filter: none !important;\n    }\n    .text-indigo-300,\n    .text-indigo-200,\n    .text-indigo-400,\n    .text-blue-300,\n    .text-blue-300\\/70,\n    .text-blue-200,\n    .text-blue-400 {\n        color: #1f3269 !important;\n    }\n    .text-green-200,\n    .text-green-300\\/70 {\n        color: #1f6929 !important;\n    }\n    .text-orange-200,\n    .text-orange-300\\/70 {\n        color: #69491f !important;\n    }\n    .hover\\:bg-gray-800\\/60:hover, .bg-gray-800\\/40 {\n        background-color: #eee !important;\n    }\n    \n    .whitespace-pre-wrap {\n        color: #000 !important;\n        user-select: auto !important;\n    }\n    \n    .text-gray-300, .text-gray-200 {\n        color: #333 !important;\n    }\n    \n    .bg-\\[rgba\\(15\\,15\\,15\\,1\\)\\] {\n        background-color: #eee !important;\n    }\n    \n    .bg-background\\/30 {\n        background-color: #ededed !important;\n    }\n}",
+    "usercssData": {
+      "name": "MathDash",
+      "namespace": "mathdash.com",
+      "version": "0.5-B",
+      "description": "see above",
+      "author": "Chat"
+    },
+    "author": "Chat",
+    "description": "see above",
+    "name": "MathDash",
+    "updateUrl": "https://userstyles.world/api/style/23253.user.css",
+    "originalDigest": "80b82c16b62f13342167f04a515c2a8250defeb0",
+    "_id": "b3f1a163-a7bf-4e41-914b-9628524c2214",
+    "_rev": 1772593809961,
+    "url": "https://userstyles.world/style/23253",
+    "installationUrl": "https://userstyles.world/style/23253",
+    "id": 4
+  },
+  {
+    "enabled": true,
+    "installDate": 1773024230437,
+    "name": "Goo Academy",
+    "sections": [
+      {
+        "code": "@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');\n\n[aria-label=\"page header\"],\n[id=\"top-header-container\"],\n[class*=\"stp-animated-banner\"],\n[aria-label^=\"Share\"] {\n    display: none !important;\n}\n\n:root {\n    --wb-font-family-sans: \"Inter\", sans-serif !important;\n}\n\nhtml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {\n    font-family: \"Inter\", sans-serif !important;\n}\n\n@layer shared {\n  @layer perseus-legacy {\n    .framework-perseus.perseus-article:not(.perseus-mobile) .perseus-renderer > .paragraph {\n      max-width: 80% !important;\n    }\n  }\n}\n\n/* Related content, links at headers */\n\n._uhlm2,\n._qr1n01z {\n    display: none !important;\n}\n\n",
+        "urlPrefixes": [
+          "https://www.khanacademy.org"
+        ]
+      }
+    ],
+    "updateDate": 1777703269639,
+    "_id": "f1189e8a-8a58-4f01-9745-c79bf14e73d3",
+    "_rev": 1777703269639,
+    "id": 5
+  },
+  {
+    "enabled": true,
+    "installDate": 1773367712571,
+    "name": "gooGPT",
+    "sections": [
+      {
+        "code": "@layer utilities { /* width of chat */\n  .\\[--thread-content-max-width\\:40rem\\] {\n    --thread-content-max-width: 65vw;\n  }\n}\n\n\n\n@layer utilities { /* No I don't like being greeted */\n  @media (min-width: 40rem) {\n    .sm\\:block {\n      display: none !important;\n    }\n  }\n}\n\n\n\n[aria-label=\"Upgrade\"], /* screw ads */\n[aria-label=\"Good response\"], \n[aria-label=\"Bad response\"],\n[aria-label=\"Share\"],\n[href=\"/images\"], /* exactly what you think */\n[aria-label=\"Claim offer\"],\n[href=\"/apps\"],\n[href=\"/deep-research\"],\n[href=\"/codex\"],\n[data-testid=\"use-case-prompt-chips\"],\n[href=\"/plugins\"],\n[href=\"/projects\"], \n[href=\"/library\"] {\n\tdisplay: none !important;\n}\n\n.hidden.lg\\:block { /* no get plus? */\n  display: none !important;\n}\n\n",
+        "urlPrefixes": [
+          "https://chatgpt.com/"
+        ]
+      }
+    ],
+    "updateDate": 1783757776548,
+    "_id": "935951a8-15ab-4ecd-b1cb-52f95db11177",
+    "_rev": 1783757776548,
+    "id": 6
+  },
+  {
+    "enabled": false,
+    "installDate": 1775002751965,
+    "name": "TokTik",
+    "sections": [
+      {
+        "code": "[class*=\"--DivContentContainer\"],\n[action=\"/search\"] {\n    display: none !important;\n}\n\n[aria-label=\"For You\"],\n[aria-label=\"Shop\"],\n[aria-label=\"Explore\"],\n[aria-label=\"Explore\"],\n[href=\"/following\"],\n[href=\"/live\"],\n[href=\"/tiktokstudio/upload?from=webapp\"] {\n    display: none !important;\n}\n\n[data-e2e=\"search-comment-container\"] {\n    display: none !important;\n}",
+        "urlPrefixes": [
+          "https://www.tiktok.com/"
+        ]
+      }
+    ],
+    "updateDate": 1776895468225,
+    "_id": "86b088ce-126f-426f-8f98-e50548e97ae9",
+    "_rev": 1776895468226,
+    "id": 7
+  },
+  {
+    "enabled": true,
+    "installDate": 1775537602006,
+    "name": "LibreText font",
+    "sections": [
+      {
+        "code": "@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');\n\np,\nbody,\nh1, h2, h3, h4 {\n    font-family: \"Inter\";\n}",
+        "regexps": [
+          "^https:\\/\\/[A-Za-z0-9.-]+\\.libretexts\\.org\\/.+$"
+        ]
+      }
+    ],
+    "updateDate": 1775537974932,
+    "_id": "455af461-7ae8-4736-80aa-c82850d65a6a",
+    "_rev": 1775537974932,
+    "id": 8
+  },
+  {
+    "enabled": true,
+    "installDate": 1775699334633,
+    "name": "Scribd+",
+    "sections": [
+      {
+        "code": "[id=\"sidebar\"],\n[id=\"global_footer\"],\n[data-e2e*=\"metadata-section\"],\n[href=\"/upload-document\"] {\n    display: none !important;\n}\n\n/* Share document */\n._3DZ17z {\n    display: none !important;\n}\n\n/* Main PDF */\n\n._2S5RNO {\n    width: 100vw !important;\n    left: 0px !important;\n}\n\n/* \"Download free for 30 days\", nav bar */\n[data-e2e=\"megamenu-top-bar-read-free-button\"] {\n\tdisplay: none !important;\n}\n\n/* aint nobody sharing */\n[aria-controls=\"radix-7\"] {\n    display: none !important;\n}\n\n/* left bar */\n[class=\"GridColumn-module_wrapper_soqyu- GridColumn-module_hide_below_xl_bqFPJU GridColumn-module_extended_xl4_3_YfaGhk GridColumn-module_extended_xl3_3_9BGgFP GridColumn-module_extended_xl2_3_m7b4Yd GridColumn-module_extended_xl_3_-M4jBh GridColumn-module_extended_l_3_BRh6gm GridColumn-module_extended_m_3_WS7F6q GridColumn-module_extended_s_3_80JJD4 GridColumn-module_extended_xs_3_1WuHyd GridColumn-module_extended_xxs_3_glgZEz\"] {\n    display: none !important;\n}\n\n/* idk what im doing */\n[class=\"GridRow-module_wrapper_Uub42x _1uy0En GridRow-module_extended_Bvagp4\"] {\n    padding: 0px !important;\n}\n\n/* testing */\n[class=\"GridColumn-module_wrapper_soqyu- GridColumn-module_extended_xl4_7_-9AEIh GridColumn-module_extended_xl3_7_B6ct2J GridColumn-module_extended_xl2_9_PxsDcr GridColumn-module_extended_xl_9_pyvIib GridColumn-module_extended_l_12_gCRsqg GridColumn-module_extended_m_8_bDZzOd GridColumn-module_extended_s_4_ZU5JoR GridColumn-module_extended_xs_4_NH6tlg GridColumn-module_extended_xxs_4_dHKOII _2x0Ov- _1kGYhk\"]  {\n    width: 95vw !important;\n    left: 0px !important;\n}\n\n.GridRow-module_extended_Bvagp4 {\n    max-width: none !important;\n}\n\n",
+        "urlPrefixes": [
+          "https://www.scribd.com"
+        ]
+      }
+    ],
+    "updateDate": 1775702392963,
+    "_id": "e5a61040-6e42-4fba-b508-c2be68497358",
+    "_rev": 1775702392963,
+    "id": 9
+  },
+  {
+    "enabled": true,
+    "installDate": 1776101932938,
+    "name": "y",
+    "sections": [
+      {
+        "code": "/* Remove sidebar and useless menu bottons */\n\n[data-testid=\"inline_reply_offscreen\"],\n[aria-label=\"Subscribe to Premium\"],\n[aria-labelledby=\"accessible-list-2\"],\n[aria-label=\"Who to follow\"],\n[aria-label=\"Trending\"],\n[data-testid=\"sidebarColumn\"],\n[aria-label=\"Grok\"],\n[aria-label=\"Premium\"],\n[aria-label=\"Follow\"],\n[aria-label=\"Bookmarks\"]{\n    display: none !important;\n}\n\n/* Width of main content */\n\n[aria-label=\"Home timeline\"],\n[data-testid=\"primaryColumn\"] {\n    width: 70vw !important;\n}\n\n.r-1ye8kvj {\n    max-width: 70vw !important;\n}\n\n/* Sidebar width, idk what im doing here too */\n\n[role=\"banner\"] {\n    width: 0px !important;\n}\n\n.r-obd0qt {\n    align-items: normal !important;\n}",
+        "urlPrefixes": [
+          "https://x.com"
+        ]
+      }
+    ],
+    "updateDate": 1776103650860,
+    "_id": "32c951c3-d210-4d80-ae68-35489a0e6f2c",
+    "_rev": 1776103650860,
+    "id": 10
+  },
+  {
+    "enabled": true,
+    "installDate": 1776570659418,
+    "name": "w2schools",
+    "sections": [
+      {
+        "code": "[id=\"right\"],\n[class=\"topnavcontainer\"],\n[class=\"topnavbackground\"],\n[id=\"pagetop\"],\n#footerwrapper,\n#wrappercontainer,\n#top-nav-bar {\n    display: none !important;\n}\n\n@media (min-width: 1675px) {\n  #main {\n    width: 100%;\n  }\n}\n\n.belowtopnavcontainer {\n    max-width: 100vw !important;\n}\n\n#main {\n    margin-top: 0px !important;\n}\n\n#leftmenuinner {\n    padding-top: 0px !important;\n}\n\n[href^=\"tryjava.asp?filename=demo\"],\n[href=\"/java/java_server.asp\"] { /* I don't wanna try it myself actually */\n    display: none !important;\n}\n\n#sidenav #leftmenuinnerinner a {\n    padding: 6px 15px 6px 17px;\n}\n\n#sidenav h2 {\n    font-weight: 600;\n}\n\n\n@media (min-width: 993px) {\n  .w3-col.l10 {\n    width: 100%;\n  }\n}",
+        "urlPrefixes": [
+          "https://www.w3schools.com"
+        ]
+      }
+    ],
+    "updateDate": 1778575390400,
+    "_id": "1df72ca1-17e6-407f-9aa2-1433588341ed",
+    "_rev": 1778575390400,
+    "id": 11
+  },
+  {
+    "enabled": true,
+    "installDate": 1776906754245,
+    "name": "f",
+    "sections": [
+      {
+        "code": ".header,\n.compiler-right-sidebar-ad {\n    display: none !important;\n}\n\n.editor-wrapper {\n    height: 100vh !important;\n}",
+        "urlPrefixes": [
+          "https://www.programiz.com/"
+        ]
+      }
+    ],
+    "updateDate": 1776906888258,
+    "_id": "0902d4b6-2f71-4efb-9b5c-6b78828eef39",
+    "_rev": 1776906888258,
+    "id": 12
+  },
+  {
+    "enabled": true,
+    "installDate": 1778165212965,
+    "name": "Uh idk",
+    "sections": [
+      {
+        "code": ".TopFloatingComponent_top-floating-component__I7ZCm, \n.TopFloatingComponent_level-2__z4DKO {\n    display: none;\n}",
+        "urlPrefixes": [
+          "https://www.studocu.com"
+        ]
+      }
+    ],
+    "updateDate": 1779051012597,
+    "_id": "f4d877ad-2401-409a-9b80-cc2fbbadf9ba",
+    "_rev": 1779051012597,
+    "id": 13
+  },
+  {
+    "enabled": true,
+    "installDate": 1779036282099,
+    "name": "ClosedGuessr",
+    "sections": [
+      {
+        "code": "@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');\n\n[class~=\"-ad-\"] {\n    display: none !important;\n}\n\nhtml * {\n    font-family: Inter, sans-serif !important;\n}",
+        "domains": [
+          "openguessr.com"
+        ]
+      }
+    ],
+    "updateDate": 1785857710169,
+    "_id": "f4b8abea-e113-4792-87a3-027a5b88fdb0",
+    "_rev": 1785857710169,
+    "id": 14
+  },
+  {
+    "enabled": true,
+    "installDate": 1780012962803,
+    "name": "GooseGooseGo",
+    "sections": [
+      {
+        "code": "[data-testid=\"mainline\"] {\n    width: 55vw !important;\n    max-width: none !important;\n    flex-basis: auto !important;\n    webkit-flex-basis: auto !important;\n}\n\n[data-testid=\"sidebar\"] { margin-left: 10vw; }\n[href*=\"&q=\"] { width: 75px; }\n[href=\"/compare-privacy\"] { display: none !important; }\n[class^=\"DrcPyihFGyKMlg6lpwsa\"] { width: 85vw !important; }",
+        "urlPrefixes": [
+          "https://duckduckgo.com"
+        ]
+      }
+    ],
+    "updateDate": 1780018567358,
+    "_id": "35533899-cdd5-4e49-bbf7-97ad9d1a0a30",
+    "_rev": 1780018567358,
+    "id": 15
+  },
+  {
+    "enabled": true,
+    "installDate": 1783657434467,
+    "name": "I hate Gmail UI",
+    "sections": [
+      {
+        "code": "@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');\n\n[data-pep-id=\"global-pep-gmail\"], /* Upgrade */\n[jslog=\"227019; u014N:xr6bB;\"], /* Gemini */\n[data-tooltip=\"Support\"], /* Help button */\n[class=\"eJPjde kSjt3c\"] /* Summarise email */\n{ display: none !important; }\n\ndiv {\n    font: 18px \"Inter\", sans-serif !important;\n}",
+        "domains": [
+          "mail.google.com"
+        ]
+      }
+    ],
+    "_rev": 1783661849251,
+    "updateDate": 1783661849251,
+    "_id": "52eecfbe-5e05-4842-90ec-0bbdaab1c10f",
+    "id": 16
+  },
+  {
+    "enabled": true,
+    "installDate": 1783897577396,
+    "name": "SideQuest Beta Testing",
+    "sections": [
+      {
+        "code": "/* \nAuthor: Anthony Cao (that_panda.)\nDescription: SideQuest styles to fix issues in the Discord server before official fixes, for testing\nVersion: 0.2-a\n*/\n/* Make Dark/Light mode buttons conformal to Android MDL3 */\n\n.sq-toggle {\n  width: 52px;\n  height: 32px;\n  border-radius: 16px;\n  position: relative;\n  border: 2px solid var(--line2);\n  background: var(--card);\n}\n\n.sq-toggle-knob {\n  position: absolute;\n  top: 50%;\n  left: 6px;\n  width: 16px;\n  height: 16px;\n  border-radius: 50%;\n  background: var(--acc);\n  transform: translateY(-50%);\n  transition:\n    left 0.2s ease,\n    width 0.2s ease,\n    height 0.2s ease;\n}\n\n.sq-toggle.on .sq-toggle-knob {\n  left: calc(100% - 26px);\n  width: 24px;\n  height: 24px;\n}\n\n/* Button smooth */\n\n@media (hover: hover) {\n  .sq-cat:hover, .sq-fb-link:hover, .sq-force:hover:not(:disabled), .sq-btn:hover:not(:disabled) {\n      transition: transform 300ms cubic-bezier(0.34, 1.56, 0.64, 1);\n      transform: scale(1.03);\n  }\n    \n    .sq-swatch:hover { transition: transform 300ms cubic-bezier(0.34, 1.56, 0.64, 1); transform: scale(1.05); }\n}\n\n/* Login page: Too aligned to the right */\n\n[class=\"sq-root\"] { padding-left: 32px !important; }",
+        "urlPrefixes": [
+          "https://sidequest-official.vercel.app/"
+        ]
+      }
+    ],
+    "_rev": 1784309647504,
+    "updateDate": 1784309647504,
+    "_id": "12d6da0d-52af-4656-8d4c-8c294cf92ec7",
+    "id": 17
+  },
+  {
+    "enabled": true,
+    "installDate": 1785137423178,
+    "name": "MeTube",
+    "sections": [
+      {
+        "code": "[aria-label=\"Share\"], /* Extra video bs */\n[aria-label=\"Ask\"], \n[aria-label=\"Save to playlist\"], \n[aria-label=\"Join this channel\"],\n[aria-label=\"Create\"], \n[aria-label=\"Search with your voice\"],\n[aria-label=\"Ask YouTube\"],\n[aria-label=\"Search\"],\n[aria-label=\"Notifications\"],\n#sections > ytd-guide-section-renderer:nth-last-child(-n + 3), /* Extra sidebar bs */\n.ytd-rich-shelf-renderer, /* No shorts */\nytd-reel-shelf-renderer, \nytd-guide-entry-renderer:has(a[title=\"Shorts\"]), \na[title=\"Shorts\"] {\n    display: none;\n}\n\n/* MAKE VIDEO ON SIDE */\n.yt-lockup-view-model {\n    flex-direction: row;\n}\n\n/* MAKE VIDEO THUMBNAIL SMALL */\n.yt-lockup-view-model__content-image {\n    width: 20% !important;\n}\n\n.yt-lockup-view-model__metadata {\n    width: 80% !important;\n}\n\n/* HIDE CHANNEL AVATAR */\n.ytDecoratedAvatarViewModelHost {\n    display: none;\n}\n\ndiv.ytd-watch-flexy#secondary {\n    display: none !important;\n}\n",
+        "urlPrefixes": [
+          "https://www.youtube.com"
+        ]
+      }
+    ],
+    "_rev": 1785479136341,
+    "updateDate": 1785479136341,
+    "_id": "7079dbe7-ac5e-4e9c-863a-4ddfad35e321",
+    "id": 18
+  },
+  {
+    "enabled": true,
+    "installDate": 1785138834539,
+    "name": "Dihcord",
+    "sections": [
+      {
+        "code": "/**\n\n * Theme 1\n\n * @name Discord+\n * @author that_panda\n * @version 1.3-b3\n * @description Tweaks for Discord that make it slightly better\n\n * Theme 2\n\n * @name Discord+\n * @author that_panda\n * @version 1.3-b3\n * @description Tweaks for Discord that make it slightly better\n*/\n\n\n\n/* ------------------------ Fonts, imports ------------------------ */\n\n/* Importing the Inter font from Google Fonts is blocked for some reason, only on Discord? */\n/* We will now be using system font and a bunch of backups */\n\n:root {\n  --font-primary: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\n  --font-display: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\n  --font-code: Consolas, Menlo, Monaco, \"Courier New\", monospace;\n  --custom-guild-list-padding: 12px;\n}\n\n.theme-light {\n  --border-sidebar: #e4e4e4;\n  --othermsg: #f0f0f0 !important;\n  --ymsg: linear-gradient(to right, #fcedfc, #fce6ef);\n}\n\n.theme-dark {\n  --border-sidebar: #333;\n  --othermsg: #333 !important;\n  --ymsg: #280038 !important;\n}\n\n/* ------------------------ Remove junk ------------------------ */\n/* Obviously if you want stuff back just delete it from code */\n\n\n[href=\"/store\"],\n[href=\"/shop\"],\n[aria-label=\"Inbox\"],\n[aria-label=\"Open Quick Switcher\"],\n[aria-label=\"Submit a Bug Report\"] {\n\tdisplay: none !important;\n}\n\n/* No activities */\n\n.nowPlayingColumn__133bf {\n\tdisplay: none !important;\n}\n\n.peopleListItem_cc6179 {\n\tpadding-top: 54px !important;\n\tpadding-bottom: 54px !important;\n}\n\n/* Guild tags in profile REALLY annoy me */\n\n.guildTagContainer__63ed3 {\n\tdisplay: none !important;\n}\n\n[data-has-border=\"true\"] {\n\tborder-top: none !important;\n}\n\n/* Whatever is at the bottom of serverlist */\n\n.wrapper_ef3116 {\n\tmargin-bottom: 0px !important;\n}\n\n/* ------------------------ My personal preferences ------------------------ */\n/* Basically thicker stuff */\n/* Friends and Quests tab on default screen */\n\n[href=\"/quest-home\"],\n[href=\"/channels/@me\"] {\n\tpadding-top: 20px !important;\n\tpadding-bottom: 20px !important;\n}\n\n/* Channels thick */\n\n.linkTop__2ea32 {\n\tpadding-top: 10px !important;\n\tpadding-bottom: 10px !important;\n}\n\n[aria-label*=\"(direct message)\"] {\n\tpadding-top: 10px !important;\n\tpadding-bottom: 10px !important;\n}\n\n\n/* ------------------------ No user area ------------------------ */\n/* Even though the \"top/bottom: 0px\" seemingly have no effect they actually do somehow */\n\n[aria-label=\"User status and settings\"] {\n\tborder-radius: 0px !important;\n\tborder: none !important;\n\twidth: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - 21px) !important;\n\tbackground: transparent /* var(--background-gradient-high, var(--background-base-lowest)) */ !important;\n\tleft: 72px !important;\n\tbottom: 0px !important;\n}\n\n.sidebar__5e434:after { /* Also user area but I have to use the weird version */\n\tdisplay:none !important;\n}\n\n.container__37e49 {\n\tpadding: 0px !important;\n}\n\n[aria-label=\"Go back\"],\n[aria-label=\"Go forward\"] {\n\tdisplay: none !important;\n}\n\n\n\n/* Window buttons are full height */\n\n.winButton_c38106 {\n\twidth: 48px !important;\n}\n\n\n\n/* ------------------------ Titlebar, servers, DMs and channels ------------------------ */\n\n.theme-light .base__5e434, /* base = titlebar, guilds = server bar*/\n.theme-light .guilds__5e434 {\n\tbackground: #eee; /* linear-gradient(135deg, #eaeaff, #fff3e3) !important; */\n}\n\n.theme-light [aria-label=\"Private channels\"], /* Sidebar [Servers] */\n.theme-light [data-list-id^=\"private-channels\"],\n.theme-light [aria-label*=\"(server)\"] {\n\tbackground: #fafafa; /* linear-gradient(160deg, #faf9ff, #fffbf3) !important; */\n}\n\n.title_edbb22 { /* name of server in titlebar*/\n\tdisplay: none !important;\n}\n\n.sidebarList__5e434 /* Sidebar (general) */ {\n\tborder-inline-start: 1px solid var(--border-sidebar);\n\tborder-top: 1px solid var(--border-sidebar);\n\tborder-top-right-radius: var(--radius-md);\n\tmargin-right: 10px !important;\n}\n\n.page__5e434 /* Page content */ {\n\tborder-top-left-radius: var(--radius-md);\n}\n\n.theme-light .chatContent_f75fb0 /* Page color (where header??) */{\n\tbackground: #fbfbfb; /* linear-gradient(150deg, #faf9ff, #fffbf3) !important; */\n}\n\n/* ------------------------ testing ------------------------ */\n\n.icon_caf372 { /* No icons in settings */\n\tdisplay: none !important;\n}\n\n.folderPreviewGuildIcon__48112 { /* Icons inside folder */\n\tborder-radius: 500px !important;\n}\n\n.blobContainer_e5445c {\n\tborder-radius: 500px !important;\n}\n\n/* -------- More testing: message bubbles --------- */\n/* All (general) */\n\n.contents_c19a55 .messageContent_c19a55 {\n\tbackground-color: var(--othermsg) !important;\n\tmax-width: 60vw;\n\twidth: fit-content;\n\tmargin: 0;\n\tpadding: 8px;\n\tborder-radius: 15px;\n}\n\n/* My (your) messages */\n\n[data-is-self=\"true\"] .contents_c19a55 .messageContent_c19a55 {\n\tbackground: var(--ymsg) !important;\n\tdisplay: block;\n}\n\n/* ----- Titlebar (actually) ----- */\n\n.page__5e434,\n.sidebarList__5e434 {\n\tmargin-top: -40px !important;\n\theight: 100vh !important;\n}\n\n.content__5e434 {\n\tmargin-top: -40px !important;\n}\n\n/* ----- Icons and fixes (Windows) ----- */\n\n.toolbar__9293f,\n.searchBar__1ac1c {\n\tmargin-right: 220px !important;\n}\n\n.trailing_c38106 {\n\tmargin-top: 16px !important;\n\tz-index: 999 !important;\n}\n\n\n[aria-label=\"Servers sidebar\"] {\n\tmargin-top: 16px !important;\n}\n\n\n\n\n\n\n\n\n\n\n\n/* ------------------------ Fonts, imports ------------------------ */\n\n.theme-light {\n  --border-sidebar: #e4e4e4;\n  --othermsg: #f0f0f0 !important;\n  --ymsg: linear-gradient(to right, #fcedfc, #fce6ef);\n}\n\n.theme-dark {\n  --border-sidebar: #333;\n  --othermsg: #333 !important;\n  --ymsg: #280038 !important;\n}\n\n/* ------------------------ Remove junk ------------------------ */\n/* Obviously if you want stuff back just delete it from code */\n\n\n[href=\"/store\"],\n[href=\"/shop\"],\n[aria-label=\"Inbox\"],\n[aria-label=\"Open Quick Switcher\"],\n[aria-label=\"Submit a Bug Report\"] {\n\tdisplay: none !important;\n}\n\n/* No activities */\n\n.nowPlayingColumn__133bf {\n\tdisplay: none !important;\n}\n\n.peopleListItem_cc6179 {\n\tpadding-top: 54px !important;\n\tpadding-bottom: 54px !important;\n}\n\n/* Guild tags in profile REALLY annoy me */\n\n.guildTagContainer__63ed3 {\n\tdisplay: none !important;\n}\n\n[data-has-border=\"true\"] {\n\tborder-top: none !important;\n}\n\n/* Whatever is at the bottom of serverlist */\n\n.wrapper_ef3116 {\n\tmargin-bottom: 0px !important;\n}\n\n/* ------------------------ My personal preferences ------------------------ */\n/* Basically thicker stuff */\n/* Friends and Quests tab on default screen */\n\n[href=\"/quest-home\"],\n[href=\"/channels/@me\"] {\n\tpadding-top: 20px !important;\n\tpadding-bottom: 20px !important;\n}\n\n/* Channels thick */\n\n.linkTop__2ea32 {\n\tpadding-top: 10px !important;\n\tpadding-bottom: 10px !important;\n}\n\n[aria-label*=\"(direct message)\"] {\n\tpadding-top: 10px !important;\n\tpadding-bottom: 10px !important;\n}\n\n\n/* ------------------------ No user area ------------------------ */\n/* Even though the \"top/bottom: 0px\" seemingly have no effect they actually do somehow */\n\n[aria-label=\"User status and settings\"] {\n\tborder-radius: 0px !important;\n\tborder: none !important;\n\twidth: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - 21px) !important;\n\tbackground: transparent /* var(--background-gradient-high, var(--background-base-lowest)) */ !important;\n\tleft: 72px !important;\n\tbottom: 0px !important;\n}\n\n.sidebar__5e434:after { /* Also user area but I have to use the weird version */\n\tdisplay:none !important;\n}\n\n.container__37e49 {\n\tpadding: 0px !important;\n}\n\n[aria-label=\"Go back\"],\n[aria-label=\"Go forward\"] {\n\tdisplay: none !important;\n}\n\n\n\n/* Window buttons are full height */\n\n.winButton_c38106 {\n\twidth: 48px !important;\n}\n\n\n\n/* ------------------------ Titlebar, servers, DMs and channels ------------------------ */\n\n.theme-light .base__5e434, /* base = titlebar, guilds = server bar*/\n.theme-light .guilds__5e434 {\n\tbackground: #eee; /* linear-gradient(135deg, #eaeaff, #fff3e3) !important; */\n}\n\n.theme-light [aria-label=\"Private channels\"], /* Sidebar [Servers] */\n.theme-light [data-list-id^=\"private-channels\"],\n.theme-light [aria-label*=\"(server)\"] {\n\tbackground: #fafafa; /* linear-gradient(160deg, #faf9ff, #fffbf3) !important; */\n}\n\n.title_edbb22 { /* name of server in titlebar*/\n\tdisplay: none !important;\n}\n\n.sidebarList__5e434 /* Sidebar (general) */ {\n\tborder-inline-start: 1px solid var(--border-sidebar);\n\tborder-top: 1px solid var(--border-sidebar);\n\tborder-top-right-radius: var(--radius-md);\n\tmargin-right: 10px !important;\n}\n\n.page__5e434 /* Page content */ {\n\tborder-top-left-radius: var(--radius-md);\n}\n\n.theme-light .chatContent_f75fb0 /* Page color (where header??) */{\n\tbackground: #fbfbfb; /* linear-gradient(150deg, #faf9ff, #fffbf3) !important; */\n}\n\n/* ------------------------ testing ------------------------ */\n\n.icon_caf372 { /* No icons in settings */\n\tdisplay: none !important;\n}\n\n.folderPreviewGuildIcon__48112 { /* Icons inside folder */\n\tborder-radius: 500px !important;\n}\n\n.blobContainer_e5445c {\n\tborder-radius: 500px !important;\n}\n\n/* -------- More testing: message bubbles --------- */\n/* All (general) */\n\n.contents_c19a55 .messageContent_c19a55 {\n\tbackground-color: var(--othermsg) !important;\n\tmax-width: 60vw;\n\twidth: fit-content;\n\tmargin: 0;\n\tpadding: 8px;\n\tborder-radius: 15px;\n}\n\n/* My (your) messages */\n\n[data-is-self=\"true\"] .contents_c19a55 .messageContent_c19a55 {\n\tbackground: var(--ymsg) !important;\n\tdisplay: block;\n}\n\n/* ----- Titlebar (actually) ----- */\n\n.page__5e434,\n.sidebarList__5e434 {\n\tmargin-top: -36px !important;\n\theight: 100vh !important;\n}\n\n.content__5e434 {\n\tmargin-top: -36px !important;\n}\n\n/* ----- Icons and fixes (Windows) ----- */\n\n.toolbar__9293f,\n.searchBar__1ac1c {\n\tmargin-right: 50px !important;\n}\n\n.trailing_c38106 {\n\tmargin-top: 16px !important;\n\tz-index: 999 !important;\n}\n\n\n[aria-label=\"Servers sidebar\"] {\n\tmargin-top: 16px !important;\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* ------------ Custom variables ------------ */\n\n.theme-dark {\n  --header-secondary: #fff !important;\n}\n\n.theme-light {\n --header-secondary: #000 !important;\n}\n\n\n/* ------------ Basic description definitions idk ------------ */\n\n\n.viewFullBio_f5f93a {\n\tdisplay: none;\n}\n.descriptionClamp_f5f93a {\n\t-webkit-line-clamp: 190 !important;\n\tposition: relative;\n\tmax-height: 2000px;\n\toverflow-x: hidden;\n\toverflow-y: auto;\t\n}\n\n/* No extra spacing if have role */\n\n:root:not(:has([aria-label^=\"Role\"])) .descriptionClamp_f5f93a {\n  margin-bottom: 40px;\n}\n\n\n.descriptionClamp_f5f93a::-webkit-scrollbar-thumb {\n\tbackground: transparent;\n\tborder-radius: 99px;\n}\n.descriptionClamp_f5f93a::-webkit-scrollbar {\n\twidth: 4px;\n}\n.descriptionClamp_f5f93a:hover::-webkit-scrollbar-track {\n\tbackground: 0 0;\n\tborder-radius: 10px;\n}\n.descriptionClamp_f5f93a:hover::-webkit-scrollbar-thumb {\n\tbackground: var(--bg-overlay-6, var(--background-tertiary));\n\tborder-radius: 0px;\n}\n.descriptionClamp_f5f93a:before {\n\tcontent: \"ABOUT ME\";\n\tfont-size: 13px;\n\tcolor: var(--header-secondary);\n\tfont-weight: 800;\n\tfont-family: var(--font-display);\n    \n}\n.custom-profile-theme.theme-dark .body__5be3e {\n    z-index: 1;\n    padding: 8px 6px 8px;\n    margin: auto;\n    flex-direction: column;\n    gap: 12px;\n    background: rgba(0, 0, 0, 0.3);\n    border-radius: 10px;\n    width: 265px;\n    overflow: visible !important;\n}\n\n.custom-profile-theme.theme-light .body__5be3e {\n    z-index: 1;\n    padding: 8px 6px 8px;\n    margin: auto;\n    flex-direction: column;\n    gap: 12px;\n    background: rgba(255,255,255, 0.5);\n    border-radius: 10px;\n    width: 265px;\n    overflow: visible !important;\n}\n\n\n.body__5be3e {\n    z-index: 1;\n    padding: 8px 6px 8px;\n    margin: auto;\n    flex-direction: column;\n    gap: 12px;\n    background: rgba(200,200,200,0.1);\n    border-radius: 10px;\n    width: 265px;\n    overflow: visible !important;\n}\n\n\n/* ------------ Roles ------------ */\n\n[aria-label^=\"Role\"]:before {\n\tcontent: \"ROLES\";\n\tfont-size: 13px;\n\tcolor: var(--header-secondary);\n\tfont-weight: 800;\n\tfont-family: var(--font-display);\n\tmargin-right: 200px;\n\tmargin-bottom: 4px;\n}\n\n[aria-label^=\"Role\"] {\n\tmargin-bottom: 50px !important;\n}\n\n\n/* ------------ Badges ------------ */\n\n\n.custom-profile-theme.theme-dark [aria-label=\"User Badges\"] {\n\tdisplay: flex;\n\tpadding: 4px;\n\tborder-radius: 10px;\n\tbackground: rgba(0,0,0,0.3) !important;\n}\n\n.custom-profile-theme.theme-light [aria-label=\"User Badges\"] {\n\tdisplay: flex;\n\tpadding: 4px;\n\tborder-radius: 10px;\n\tbackground: rgba(255,255,255,0.5) !important;\n}\n\n[aria-label=\"User Badges\"] {\n\tdisplay: flex;\n\tpadding: 4px;\n\tborder-radius: 10px;\n\tbackground: rgba(200,200,200,0.1) !important;\n\n\tposition: absolute;\n\tmargin-top: -130px;\n\tright: 0px; \n}\n\n.container__63ed3 {\n    border-bottom: 1px solid rgba(128,128,128,0.33); \n    padding-bottom: 70px;\n}\n\n/* ------------ Status ------------ */\n\n.container_ab8609 {\n\ttop: 210px !important;\n\tleft: 15px !important;\n}\n\n\n.outer_ab8609,\n.inner_ab8609 {\n\tborder: none;\n\tbackground: none;\n\ttext-align: left;\n\tbox-shadow: none;\n\tborder-radius: 0px !important;\n\tmin-width: 250px !important;\n\tmin-height: 50px !important;\n}\n\n.inner_ab8609 {\n\tpadding: 0px !important;\n\tleft: 10px;\n}\n\n.outer_ab8609:before,\n.outer_ab8609:after {\n\tdisplay: none;\n}\n\n.outer_ab8609, .outer_ab8609:before,.outer_ab8609:after {\n\tbox-shadow: none;\n\tz-index: 1;\n\tbackground: transparent;\n\ttop: 117px !important;\n\tborder: none !important;\n}\n\n.custom-profile-theme.theme-dark .outer_ab8609 {\n\tborder: none;\n}\n\n.custom-profile-theme.theme-light .outer_ab8609 {\n\tborder: none;\n}\n\n.content_ab8609 {\n  overflow: visible !important;\n  -webkit-line-clamp: 40 !important;\n}\n\n\n/* ------------ experimenting with Notes and footer ------------ */\n/* ------------ from milbits/OldCord thanks ------------ */\n\n\n.nicknameIcons__63ed3 {\n\ttop: calc(100% - 50px);\n\tposition: absolute;\n\tdisplay: flex !important;\n\tpadding-top: 15px !important;\n\toverflow-x: hidden;\n\toverflow-y: scroll;\n\twidth: 100%;\n\tmargin-top: auto;\n\t&::-webkit-scrollbar {\n\t\tdisplay: none;\n\t}\n\t& span:nth-of-type(1) {\n\t\twidth: 0;\n\n\t}\n\t& .button__0f074 {\n\t\topacity: 1;\n\t\twidth: 10px;\n\t}\n\t& .hiddenVisually_b18fe2:before {\n\t\tcontent: \"NOTE\";\n\t\tposition: absolute;\n\t\tmargin-top: -17px;\n\t\tcolor: var(--header-secondary);\n\t\tfont-weight: 800;\n\t\tfont-family: var(--font-display);\n\t\tfont-size: 13px;\n\t}\n\t& .button__0f074 svg {\n\t\tdisplay: none;\n\t}\n\t& .hiddenVisually_b18fe2 {\n\t\tdisplay: inline-block;\n\t\talign-content: start;\n\t\ttext-align: left;\n\t\tmin-height: 38px;\n\t\tmargin-top: 10px;\n\t\twhite-space: pre-wrap;\n\t\tcolor: var(--header-secondary);\n\t\tfont-weight: 500;\n\t\tfont-family: var(--font-display);\n\t\tfont-size: 13px;\n\t\tuser-select: text;\n\t\tclip: unset;\n\t\tclip-path: unset;\n\t\theight: unset;\n\t\toverflow: auto;\n\t\tposition: unset;\n\t\twidth: unset;\n\t\t&::-webkit-scrollbar-thumb {\n\t\t\tbackground: transparent;\n\t\t\tborder-radius: 99px;\n\t\t}\n\t\t&::-webkit-scrollbar {\n\t\t\twidth: 4px;\n\t\t}\n\t\t&:hover::-webkit-scrollbar-track {\n\t\t\tbackground: 0 0;\n\t\t\tborder-radius: 10px;\n\t\t}\n\t\t&:hover::-webkit-scrollbar-thumb {\n\t\t\tbackground: var(--background-gradient-highest, var(--background-tertiary));\n\t\t\tborder-radius: 999px;\n\t\t}\n\t}\n}\n\n.footer__5be3e:is(:empty) {\n\tdisplay: none;\n}\n\n/* ------------ Miscellaneous and testing ------------ */\n\n\n[aria-label=\"Game Collection\"] {\n  display: none !important;\n}\n\n\n",
+        "urlPrefixes": [
+          "https://discord.com"
+        ]
+      }
+    ],
+    "_rev": 1785139322975,
+    "updateDate": 1785139322975,
+    "_id": "6d151d3b-0d10-4b7a-bf0d-0dc32acf72b2",
+    "id": 19
+  },
+  {
+    "enabled": true,
+    "installDate": 1785343263653,
+    "name": "www.reddit.com",
+    "sections": [
+      {
+        "code": "[id=\"right-sidebar-container\"],\n[id=\"advertise-button\"],\n[aria-label=\"Create post\"] { display: none !important; }\n\n\n@media (min-width: 768px) {\n  .xs\\:pb-xl {\n    padding-bottom: 0px;\n  }\n}\n\n@media (min-width: 768px) {\n  .xs\\:\\[\\&\\.fixed-sidebar\\]\\:grid-cols-\\[minmax\\(0\\,756px\\)_minmax\\(0\\,316px\\)\\].fixed-sidebar {\n    grid-template-columns: none !important;\n  }\n}\n\n@media (min-width: 960px) {\n  .s\\:\\[\\&\\.fixed-sidebar\\]\\:grid-cols-\\[minmax\\(0\\,756px\\)_minmax\\(0\\,316px\\)\\].fixed-sidebar {\n    grid-template-columns: none !important;\n  }\n}",
+        "urlPrefixes": [
+          "https://www.reddit.com"
+        ]
+      }
+    ],
+    "_rev": 1785348073226,
+    "updateDate": 1785348073226,
+    "_id": "ed573a35-497a-4836-8f60-f8f5c0c47e2b",
+    "id": 20
+  },
+  {
+    "enabled": true,
+    "installDate": 1786205200549,
+    "name": "BoPS",
+    "sections": [
+      {
+        "code": "[id='top-bar'],\n[id=\"small-footer-wrapper\"] {\n    display: none !important;\n}\n\n[id=\"main-content\"] {\n    max-width: 99vw !important;\n    width: 99vw !important;\n}\n\n.cmty-topic-posts-outer-wrapper .aops-scrollbar-visible .aops-scroll-content {\n  width: calc(100% - 16px);\n}\n\n.cmty-post-body {\n    width: 100%;\n}",
+        "urlPrefixes": [
+          "https://artofproblemsolving.com"
+        ]
+      }
+    ],
+    "_rev": 1786205797801,
+    "updateDate": 1786205797801,
+    "_id": "3f432849-7f81-4bc0-b0fd-082996bd2a0a",
+    "id": 21
+  }
+]
