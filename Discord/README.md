@@ -1,39 +1,27 @@
 # Discord themes
----
-Update: This repo contains 2 (or more when I feel like it) themes:
 
-- f.theme.css: Primary theme, contains message bubbles, dark/light mode support, changes a lot of things, **more frequently updated**
-- OldProfile.theme.css: recreates the old Discord user profile, **less frequently updated**
+- Discord+.theme.css: Primary theme, contains message bubbles, dark/light mode support, changes a lot of things
+    - This theme does NOT have good support for Dark mode users because they bully me so it's light mode only
+- OldProfile.theme.css: recreates the old Discord user profile
 
-As I ~~stop procrastinating~~ be more active, I will hopefully separate this repo into "big" themes (above) and "small" themes, which are either links to other mini themes or smaller themes of my own that change less.
-
-
-```diff
-- For some reason, the old sidebar CSS import doesn't work very well on Discord web. 
-```
-<details>
-  <summary>Image previews (SUBJECT TO CHANGE)</summary>
-Light mode:
-
-![Light Mode](image/Light.png)
-
-Themed mode:
-
-![Purple/Blue theme](image/Themed.png)
-
-Dark mode:
-
-![Dark theme](image/Dark.png)
-</details>
+I'll add image previews later, I'm updating some of my themes quite a bit right now
 
 ---
 
-Todo for f.theme.css:
+### Support for Discord versions (Discord+)
 
-| Feature           | Is implemented? |
-| :---------------- | :------: |
-| Remove most Nitro junk |  Yes   |
-| Old User area     | Yes      |
-| Old server list   | Yes (import)   |
-| No titlebar       |  Partial   |
-| Message bubbles   |   No     |
+| Feature| Windows  | macOS | Linux | Web |
+| ------------- | ------------- |:-------------:| ------------- |------------- |
+| Remove titlebar      | Works      | supported in an older version, untested right now     | Untested     | Works   |
+| Fonts (Inter, Consolas) [0]      | Works      | Works     | Untested     | **Not supported**     |
+| Old user area      | Works      | Works     | Untested     | Works     |
+| Message bubbles [1] | Works | Works | Probably doesn't work | Works |
+
+
+[0] Does not work on web because requests to Google Fonts (Inter) are blocked. At least, that's what Firefox does. 
+
+[1] Message bubbles require the use of the "Theme Attribute" plugin in Vencord, or the equivalent in BetterDiscord or any client mod you use. Or, you can modify the source code which probably works better. 
+
+### Support for Discord versions (OldProfile)
+
+Have only tested on macOS and Windows, everything works there. Should theoretically work on all Discord versions, but I don't know. 
